@@ -1,0 +1,1813 @@
+2022-01-28 17:56:31,329 - Log file for this run: /disks/disk2/lishengyan/mcuev/max7800-dev/ai8x-training/logs/2022.01.28-175631/2022.01.28-175631.log
+2022-01-28 17:56:31,329 - Number of CPUs: 48
+2022-01-28 17:56:31,330 - Number of GPUs: 4
+2022-01-28 17:56:31,330 - CUDA version: 10.2
+2022-01-28 17:56:31,330 - CUDNN version: 7605
+2022-01-28 17:56:31,330 - Kernel: 5.11.0-43-generic
+2022-01-28 17:56:31,330 - Python: 3.8.11 (default, Aug  3 2021, 15:09:35) 
+[GCC 7.5.0]
+2022-01-28 17:56:31,331 - pip freeze: {'absl-py': '1.0.0', 'appdirs': '1.4.4', 'argon2-cffi': '21.3.0', 'argon2-cffi-bindings': '21.2.0', 'asttokens': '2.0.5', 'atomicwrites': '1.4.0', 'attrs': '21.4.0', 'audioread': '2.1.9', 'backcall': '0.2.0', 'black': '21.12b0', 'bleach': '4.1.0', 'bqplot': '0.11.5', 'cachetools': '4.2.4', 'certifi': '2021.10.8', 'cffi': '1.15.0', 'charset-normalizer': '2.0.10', 'click': '8.0.3', 'cloudpickle': '2.0.0', 'colorama': '0.4.4', 'cycler': '0.11.0', 'debugpy': '1.5.1', 'decorator': '5.1.1', 'defusedxml': '0.7.1', 'deprecated': '1.2.13', 'distiller': '0.4.0rc0', 'entrypoints': '0.3', 'executing': '0.8.2', 'fonttools': '4.28.5', 'future': '0.18.2', 'gitdb': '4.0.9', 'gitpython': '3.1.26', 'google-auth': '1.35.0', 'google-auth-oauthlib': '0.4.6', 'graphviz': '0.10.1', 'grpcio': '1.43.0', 'gym': '0.12.5', 'idna': '3.3', 'importlib-metadata': '4.10.1', 'importlib-resources': '5.4.0', 'ipykernel': '6.7.0', 'ipython': '8.0.1', 'ipython-genutils': '0.2.0', 'ipywidgets': '7.4.2', 'jedi': '0.18.1', 'jinja2': '3.0.3', 'joblib': '1.1.0', 'jsonpatch': '1.32', 'jsonpointer': '2.2', 'jsonschema': '4.4.0', 'jupyter': '1.0.0', 'jupyter-client': '7.1.2', 'jupyter-console': '6.4.0', 'jupyter-core': '4.9.1', 'jupyterlab-pygments': '0.1.2', 'kiwisolver': '1.3.2', 'librosa': '0.8.1', 'llvmlite': '0.32.1', 'markdown': '3.3.6', 'markupsafe': '2.0.1', 'matplotlib': '3.5.1', 'matplotlib-inline': '0.1.3', 'mistune': '0.8.4', 'more-itertools': '8.12.0', 'munch': '2.5.0', 'mypy-extensions': '0.4.3', 'nbclient': '0.5.10', 'nbconvert': '6.4.0', 'nbformat': '5.1.3', 'nest-asyncio': '1.5.4', 'notebook': '6.4.7', 'numba': '0.49.1', 'numpy': '1.20.3', 'oauthlib': '3.1.1', 'onnx': '1.10.2', 'opencv-python': '4.5.5.62', 'packaging': '21.3', 'pandas': '1.4.0', 'pandocfilters': '1.5.0', 'parso': '0.8.3', 'pathspec': '0.9.0', 'pexpect': '4.8.0', 'pickleshare': '0.7.5', 'pillow': '9.0.0', 'pip': '21.3.1', 'platformdirs': '2.4.1', 'pluggy': '0.13.1', 'pooch': '1.6.0', 'pretrainedmodels': '0.7.4', 'prometheus-client': '0.12.0', 'prompt-toolkit': '3.0.24', 'protobuf': '3.19.3', 'ptyprocess': '0.7.0', 'pure-eval': '0.2.2', 'py': '1.11.0', 'pyasn1': '0.4.8', 'pyasn1-modules': '0.2.8', 'pycparser': '2.21', 'pydot': '1.4.1', 'pygithub': '1.55', 'pyglet': '1.5.21', 'pygments': '2.11.2', 'pyjwt': '2.3.0', 'pynacl': '1.5.0', 'pyparsing': '3.0.7', 'pyrsistent': '0.18.1', 'pytest': '4.6.11', 'python-dateutil': '2.8.2', 'pytsmod': '0.3.3', 'pytz': '2021.3', 'pyyaml': '6.0', 'pyzmq': '22.3.0', 'qgrid': '1.1.1', 'qtconsole': '5.2.2', 'qtpy': '2.0.0', 'requests': '2.27.1', 'requests-oauthlib': '1.3.0', 'resampy': '0.2.2', 'rsa': '4.8', 'scikit-learn': '0.23.2', 'scipy': '1.7.3', 'send2trash': '1.8.0', 'setuptools': '60.5.0', 'shap': '0.40.0', 'six': '1.16.0', 'slicer': '0.0.7', 'smmap': '5.0.0', 'soundfile': '0.10.3.post1', 'stack-data': '0.1.4', 'tabulate': '0.8.3', 'tensorboard': '2.4.1', 'tensorboard-plugin-wit': '1.8.1', 'terminado': '0.12.1', 'testpath': '0.5.0', 'threadpoolctl': '3.0.0', 'tk': '0.1.0', 'tomli': '1.2.3', 'torch': '1.8.1', 'torchfile': '0.1.0', 'torchnet': '0.0.4', 'torchvision': '0.9.1', 'tornado': '6.1', 'tqdm': '4.33.0', 'traitlets': '5.1.1', 'traittypes': '0.2.1', 'typing-extensions': '4.0.1', 'urllib3': '1.26.8', 'visdom': '0.1.8.9', 'wcwidth': '0.2.5', 'webencodings': '0.5.1', 'websocket-client': '1.2.3', 'werkzeug': '2.0.2', 'wheel': '0.37.1', 'widgetsnbextension': '3.4.2', 'wrapt': '1.13.3', 'xlsxwriter': '3.0.2', 'yamllint': '1.26.3', 'zipp': '3.7.0'}
+2022-01-28 17:56:31,331 - Command line: train.py --epochs 160 --optimizer Adam --lr 0.001 --deterministic --compress schedule-fpr.yaml --model ai85fprnet --dataset fpr --batch-size 64 --device MAX78000 --regression --print-freq 250
+2022-01-28 17:56:31,332 - Distiller: 0.4.0rc0
+2022-01-28 17:56:31,332 - set_deterministic was invoked
+2022-01-28 17:56:31,343 - Optimizer Type: <class 'torch.optim.adam.Adam'>
+2022-01-28 17:56:31,343 - Optimizer Args: {'lr': 0.001, 'betas': (0.9, 0.999), 'eps': 1e-08, 'weight_decay': 0, 'amsgrad': False}
+2022-01-28 17:56:31,346 - set_deterministic was invoked
+2022-01-28 17:56:31,354 - Dataset sizes:
+	training=2700
+	validation=300
+	test=500
+2022-01-28 17:56:31,354 - Reading compression schedule from: schedule-fpr.yaml
+2022-01-28 17:56:31,357 - Schedule contents:
+{
+  "lr_schedulers": {
+    "training_lr": {
+      "class": "MultiStepLR",
+      "milestones": [
+        10,
+        20,
+        40,
+        60,
+        80
+      ],
+      "gamma": 0.5
+    }
+  },
+  "policies": [
+    {
+      "lr_scheduler": {
+        "instance_name": "training_lr"
+      },
+      "starting_epoch": 0,
+      "ending_epoch": 150,
+      "frequency": 1
+    }
+  ]
+}
+2022-01-28 17:56:31,358 - 
+
+2022-01-28 17:56:31,359 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:56:32,826 - Epoch: [0][   43/   43]    Overall Loss 0.383618    Objective Loss 0.383618    MSE 0.336104    LR 0.001000    Time 0.034090    
+2022-01-28 17:56:32,877 - --- validate (epoch=0)-----------
+2022-01-28 17:56:32,877 - 300 samples (64 per mini-batch)
+2022-01-28 17:56:33,249 - Test: [    5/    5]    Loss 0.333106    MSE 0.332697    
+2022-01-28 17:56:33,302 - ==> MSE: 0.33270    Loss: 0.333
+
+2022-01-28 17:56:33,304 - ==> Best [MSE: 0.33270   Sparsity:0.00   Params: 139184 on epoch: 0]
+2022-01-28 17:56:33,304 - Saving checkpoint to: logs/2022.01.28-175631/checkpoint.pth.tar
+2022-01-28 17:56:33,315 - 
+
+2022-01-28 17:56:33,316 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:56:34,726 - Epoch: [1][   43/   43]    Overall Loss 0.334502    Objective Loss 0.334502    MSE 0.326558    LR 0.001000    Time 0.032770    
+2022-01-28 17:56:34,806 - --- validate (epoch=1)-----------
+2022-01-28 17:56:34,806 - 300 samples (64 per mini-batch)
+2022-01-28 17:56:35,181 - Test: [    5/    5]    Loss 0.333579    MSE 0.333358    
+2022-01-28 17:56:35,241 - ==> MSE: 0.33336    Loss: 0.334
+
+2022-01-28 17:56:35,245 - ==> Best [MSE: 0.33270   Sparsity:0.00   Params: 139184 on epoch: 0]
+2022-01-28 17:56:35,246 - Saving checkpoint to: logs/2022.01.28-175631/checkpoint.pth.tar
+2022-01-28 17:56:35,258 - 
+
+2022-01-28 17:56:35,258 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:56:36,702 - Epoch: [2][   43/   43]    Overall Loss 0.333868    Objective Loss 0.333868    MSE 0.329274    LR 0.001000    Time 0.033554    
+2022-01-28 17:56:36,778 - --- validate (epoch=2)-----------
+2022-01-28 17:56:36,778 - 300 samples (64 per mini-batch)
+2022-01-28 17:56:37,151 - Test: [    5/    5]    Loss 0.331409    MSE 0.331475    
+2022-01-28 17:56:37,210 - ==> MSE: 0.33148    Loss: 0.331
+
+2022-01-28 17:56:37,212 - ==> Best [MSE: 0.33148   Sparsity:0.00   Params: 139184 on epoch: 2]
+2022-01-28 17:56:37,212 - Saving checkpoint to: logs/2022.01.28-175631/checkpoint.pth.tar
+2022-01-28 17:56:37,225 - 
+
+2022-01-28 17:56:37,225 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:56:38,638 - Epoch: [3][   43/   43]    Overall Loss 0.334136    Objective Loss 0.334136    MSE 0.324967    LR 0.001000    Time 0.032826    
+2022-01-28 17:56:38,718 - --- validate (epoch=3)-----------
+2022-01-28 17:56:38,719 - 300 samples (64 per mini-batch)
+2022-01-28 17:56:39,092 - Test: [    5/    5]    Loss 0.332186    MSE 0.331972    
+2022-01-28 17:56:39,146 - ==> MSE: 0.33197    Loss: 0.332
+
+2022-01-28 17:56:39,150 - ==> Best [MSE: 0.33148   Sparsity:0.00   Params: 139184 on epoch: 2]
+2022-01-28 17:56:39,150 - Saving checkpoint to: logs/2022.01.28-175631/checkpoint.pth.tar
+2022-01-28 17:56:39,163 - 
+
+2022-01-28 17:56:39,163 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:56:40,578 - Epoch: [4][   43/   43]    Overall Loss 0.333842    Objective Loss 0.333842    MSE 0.326438    LR 0.001000    Time 0.032867    
+2022-01-28 17:56:40,651 - --- validate (epoch=4)-----------
+2022-01-28 17:56:40,652 - 300 samples (64 per mini-batch)
+2022-01-28 17:56:41,026 - Test: [    5/    5]    Loss 0.330814    MSE 0.331021    
+2022-01-28 17:56:41,078 - ==> MSE: 0.33102    Loss: 0.331
+
+2022-01-28 17:56:41,082 - ==> Best [MSE: 0.33102   Sparsity:0.00   Params: 139184 on epoch: 4]
+2022-01-28 17:56:41,082 - Saving checkpoint to: logs/2022.01.28-175631/checkpoint.pth.tar
+2022-01-28 17:56:41,097 - 
+
+2022-01-28 17:56:41,097 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:56:42,505 - Epoch: [5][   43/   43]    Overall Loss 0.323650    Objective Loss 0.323650    MSE 0.313020    LR 0.001000    Time 0.032721    
+2022-01-28 17:56:42,575 - --- validate (epoch=5)-----------
+2022-01-28 17:56:42,575 - 300 samples (64 per mini-batch)
+2022-01-28 17:56:42,954 - Test: [    5/    5]    Loss 0.304019    MSE 0.303778    
+2022-01-28 17:56:43,011 - ==> MSE: 0.30378    Loss: 0.304
+
+2022-01-28 17:56:43,014 - ==> Best [MSE: 0.30378   Sparsity:0.00   Params: 139184 on epoch: 5]
+2022-01-28 17:56:43,014 - Saving checkpoint to: logs/2022.01.28-175631/checkpoint.pth.tar
+2022-01-28 17:56:43,026 - 
+
+2022-01-28 17:56:43,026 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:56:44,431 - Epoch: [6][   43/   43]    Overall Loss 0.302811    Objective Loss 0.302811    MSE 0.295007    LR 0.001000    Time 0.032626    
+2022-01-28 17:56:44,488 - --- validate (epoch=6)-----------
+2022-01-28 17:56:44,488 - 300 samples (64 per mini-batch)
+2022-01-28 17:56:44,858 - Test: [    5/    5]    Loss 0.292672    MSE 0.292770    
+2022-01-28 17:56:44,911 - ==> MSE: 0.29277    Loss: 0.293
+
+2022-01-28 17:56:44,913 - ==> Best [MSE: 0.29277   Sparsity:0.00   Params: 139184 on epoch: 6]
+2022-01-28 17:56:44,914 - Saving checkpoint to: logs/2022.01.28-175631/checkpoint.pth.tar
+2022-01-28 17:56:44,926 - 
+
+2022-01-28 17:56:44,926 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:56:46,346 - Epoch: [7][   43/   43]    Overall Loss 0.288781    Objective Loss 0.288781    MSE 0.280025    LR 0.001000    Time 0.032994    
+2022-01-28 17:56:46,404 - --- validate (epoch=7)-----------
+2022-01-28 17:56:46,404 - 300 samples (64 per mini-batch)
+2022-01-28 17:56:46,772 - Test: [    5/    5]    Loss 0.278029    MSE 0.278210    
+2022-01-28 17:56:46,827 - ==> MSE: 0.27821    Loss: 0.278
+
+2022-01-28 17:56:46,830 - ==> Best [MSE: 0.27821   Sparsity:0.00   Params: 139184 on epoch: 7]
+2022-01-28 17:56:46,831 - Saving checkpoint to: logs/2022.01.28-175631/checkpoint.pth.tar
+2022-01-28 17:56:46,843 - 
+
+2022-01-28 17:56:46,843 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:56:48,426 - Epoch: [8][   43/   43]    Overall Loss 0.277780    Objective Loss 0.277780    MSE 0.272463    LR 0.001000    Time 0.036783    
+2022-01-28 17:56:48,484 - --- validate (epoch=8)-----------
+2022-01-28 17:56:48,485 - 300 samples (64 per mini-batch)
+2022-01-28 17:56:48,858 - Test: [    5/    5]    Loss 0.295055    MSE 0.293633    
+2022-01-28 17:56:48,914 - ==> MSE: 0.29363    Loss: 0.295
+
+2022-01-28 17:56:48,920 - ==> Best [MSE: 0.27821   Sparsity:0.00   Params: 139184 on epoch: 7]
+2022-01-28 17:56:48,920 - Saving checkpoint to: logs/2022.01.28-175631/checkpoint.pth.tar
+2022-01-28 17:56:48,931 - 
+
+2022-01-28 17:56:48,931 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:56:50,401 - Epoch: [9][   43/   43]    Overall Loss 0.272190    Objective Loss 0.272190    MSE 0.262183    LR 0.001000    Time 0.034154    
+2022-01-28 17:56:50,466 - --- validate (epoch=9)-----------
+2022-01-28 17:56:50,466 - 300 samples (64 per mini-batch)
+2022-01-28 17:56:50,843 - Test: [    5/    5]    Loss 0.268130    MSE 0.268682    
+2022-01-28 17:56:50,900 - ==> MSE: 0.26868    Loss: 0.268
+
+2022-01-28 17:56:50,903 - ==> Best [MSE: 0.26868   Sparsity:0.00   Params: 139184 on epoch: 9]
+2022-01-28 17:56:50,903 - Saving checkpoint to: logs/2022.01.28-175631/checkpoint.pth.tar
+2022-01-28 17:56:50,936 - 
+
+2022-01-28 17:56:50,937 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:56:52,600 - Epoch: [10][   43/   43]    Overall Loss 0.264143    Objective Loss 0.264143    MSE 0.251879    LR 0.000500    Time 0.038662    
+2022-01-28 17:56:52,661 - --- validate (epoch=10)-----------
+2022-01-28 17:56:52,661 - 300 samples (64 per mini-batch)
+2022-01-28 17:56:53,089 - Test: [    5/    5]    Loss 0.262464    MSE 0.262076    
+2022-01-28 17:56:53,145 - ==> MSE: 0.26208    Loss: 0.262
+
+2022-01-28 17:56:53,148 - ==> Best [MSE: 0.26208   Sparsity:0.00   Params: 139184 on epoch: 10]
+2022-01-28 17:56:53,148 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 17:56:53,160 - 
+
+2022-01-28 17:56:53,160 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:56:55,034 - Epoch: [11][   43/   43]    Overall Loss 0.259348    Objective Loss 0.259348    MSE 0.255844    LR 0.000500    Time 0.043535    
+2022-01-28 17:56:55,099 - --- validate (epoch=11)-----------
+2022-01-28 17:56:55,099 - 300 samples (64 per mini-batch)
+2022-01-28 17:56:55,509 - Test: [    5/    5]    Loss 0.257811    MSE 0.258149    
+2022-01-28 17:56:55,578 - ==> MSE: 0.25815    Loss: 0.258
+
+2022-01-28 17:56:55,580 - ==> Best [MSE: 0.25815   Sparsity:0.00   Params: 139184 on epoch: 11]
+2022-01-28 17:56:55,580 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 17:56:55,593 - 
+
+2022-01-28 17:56:55,593 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:56:57,219 - Epoch: [12][   43/   43]    Overall Loss 0.255823    Objective Loss 0.255823    MSE 0.250006    LR 0.000500    Time 0.037780    
+2022-01-28 17:56:57,276 - --- validate (epoch=12)-----------
+2022-01-28 17:56:57,277 - 300 samples (64 per mini-batch)
+2022-01-28 17:56:57,673 - Test: [    5/    5]    Loss 0.254698    MSE 0.254902    
+2022-01-28 17:56:57,729 - ==> MSE: 0.25490    Loss: 0.255
+
+2022-01-28 17:56:57,732 - ==> Best [MSE: 0.25490   Sparsity:0.00   Params: 139184 on epoch: 12]
+2022-01-28 17:56:57,732 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 17:56:57,747 - 
+
+2022-01-28 17:56:57,747 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:56:59,406 - Epoch: [13][   43/   43]    Overall Loss 0.252098    Objective Loss 0.252098    MSE 0.249938    LR 0.000500    Time 0.038548    
+2022-01-28 17:56:59,462 - --- validate (epoch=13)-----------
+2022-01-28 17:56:59,463 - 300 samples (64 per mini-batch)
+2022-01-28 17:56:59,860 - Test: [    5/    5]    Loss 0.248851    MSE 0.249435    
+2022-01-28 17:56:59,913 - ==> MSE: 0.24943    Loss: 0.249
+
+2022-01-28 17:56:59,917 - ==> Best [MSE: 0.24943   Sparsity:0.00   Params: 139184 on epoch: 13]
+2022-01-28 17:56:59,917 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 17:56:59,931 - 
+
+2022-01-28 17:56:59,931 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:57:01,585 - Epoch: [14][   43/   43]    Overall Loss 0.243846    Objective Loss 0.243846    MSE 0.236954    LR 0.000500    Time 0.038425    
+2022-01-28 17:57:01,642 - --- validate (epoch=14)-----------
+2022-01-28 17:57:01,643 - 300 samples (64 per mini-batch)
+2022-01-28 17:57:02,046 - Test: [    5/    5]    Loss 0.241691    MSE 0.241836    
+2022-01-28 17:57:02,099 - ==> MSE: 0.24184    Loss: 0.242
+
+2022-01-28 17:57:02,102 - ==> Best [MSE: 0.24184   Sparsity:0.00   Params: 139184 on epoch: 14]
+2022-01-28 17:57:02,102 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 17:57:02,114 - 
+
+2022-01-28 17:57:02,114 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:57:03,820 - Epoch: [15][   43/   43]    Overall Loss 0.237935    Objective Loss 0.237935    MSE 0.231721    LR 0.000500    Time 0.039634    
+2022-01-28 17:57:03,886 - --- validate (epoch=15)-----------
+2022-01-28 17:57:03,886 - 300 samples (64 per mini-batch)
+2022-01-28 17:57:04,314 - Test: [    5/    5]    Loss 0.238018    MSE 0.237500    
+2022-01-28 17:57:04,372 - ==> MSE: 0.23750    Loss: 0.238
+
+2022-01-28 17:57:04,376 - ==> Best [MSE: 0.23750   Sparsity:0.00   Params: 139184 on epoch: 15]
+2022-01-28 17:57:04,376 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 17:57:04,390 - 
+
+2022-01-28 17:57:04,390 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:57:06,235 - Epoch: [16][   43/   43]    Overall Loss 0.234520    Objective Loss 0.234520    MSE 0.233541    LR 0.000500    Time 0.042877    
+2022-01-28 17:57:06,290 - --- validate (epoch=16)-----------
+2022-01-28 17:57:06,290 - 300 samples (64 per mini-batch)
+2022-01-28 17:57:06,691 - Test: [    5/    5]    Loss 0.234789    MSE 0.235214    
+2022-01-28 17:57:06,754 - ==> MSE: 0.23521    Loss: 0.235
+
+2022-01-28 17:57:06,759 - ==> Best [MSE: 0.23521   Sparsity:0.00   Params: 139184 on epoch: 16]
+2022-01-28 17:57:06,760 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 17:57:06,775 - 
+
+2022-01-28 17:57:06,775 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:57:08,463 - Epoch: [17][   43/   43]    Overall Loss 0.227712    Objective Loss 0.227712    MSE 0.222325    LR 0.000500    Time 0.039219    
+2022-01-28 17:57:08,523 - --- validate (epoch=17)-----------
+2022-01-28 17:57:08,523 - 300 samples (64 per mini-batch)
+2022-01-28 17:57:08,932 - Test: [    5/    5]    Loss 0.230433    MSE 0.230793    
+2022-01-28 17:57:08,990 - ==> MSE: 0.23079    Loss: 0.230
+
+2022-01-28 17:57:08,993 - ==> Best [MSE: 0.23079   Sparsity:0.00   Params: 139184 on epoch: 17]
+2022-01-28 17:57:08,993 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 17:57:09,005 - 
+
+2022-01-28 17:57:09,005 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:57:10,708 - Epoch: [18][   43/   43]    Overall Loss 0.221058    Objective Loss 0.221058    MSE 0.220580    LR 0.000500    Time 0.039560    
+2022-01-28 17:57:10,762 - --- validate (epoch=18)-----------
+2022-01-28 17:57:10,762 - 300 samples (64 per mini-batch)
+2022-01-28 17:57:11,161 - Test: [    5/    5]    Loss 0.221555    MSE 0.221576    
+2022-01-28 17:57:11,214 - ==> MSE: 0.22158    Loss: 0.222
+
+2022-01-28 17:57:11,219 - ==> Best [MSE: 0.22158   Sparsity:0.00   Params: 139184 on epoch: 18]
+2022-01-28 17:57:11,219 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 17:57:11,232 - 
+
+2022-01-28 17:57:11,232 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:57:12,883 - Epoch: [19][   43/   43]    Overall Loss 0.215150    Objective Loss 0.215150    MSE 0.211565    LR 0.000500    Time 0.038360    
+2022-01-28 17:57:12,946 - --- validate (epoch=19)-----------
+2022-01-28 17:57:12,946 - 300 samples (64 per mini-batch)
+2022-01-28 17:57:13,348 - Test: [    5/    5]    Loss 0.227791    MSE 0.228034    
+2022-01-28 17:57:13,407 - ==> MSE: 0.22803    Loss: 0.228
+
+2022-01-28 17:57:13,410 - ==> Best [MSE: 0.22158   Sparsity:0.00   Params: 139184 on epoch: 18]
+2022-01-28 17:57:13,410 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 17:57:13,421 - 
+
+2022-01-28 17:57:13,421 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:57:15,264 - Epoch: [20][   43/   43]    Overall Loss 0.211692    Objective Loss 0.211692    MSE 0.206197    LR 0.000250    Time 0.042828    
+2022-01-28 17:57:15,329 - --- validate (epoch=20)-----------
+2022-01-28 17:57:15,329 - 300 samples (64 per mini-batch)
+2022-01-28 17:57:15,756 - Test: [    5/    5]    Loss 0.209567    MSE 0.209701    
+2022-01-28 17:57:15,814 - ==> MSE: 0.20970    Loss: 0.210
+
+2022-01-28 17:57:15,818 - ==> Best [MSE: 0.20970   Sparsity:0.00   Params: 139184 on epoch: 20]
+2022-01-28 17:57:15,818 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 17:57:15,832 - 
+
+2022-01-28 17:57:15,832 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:57:17,714 - Epoch: [21][   43/   43]    Overall Loss 0.206997    Objective Loss 0.206997    MSE 0.205865    LR 0.000250    Time 0.043723    
+2022-01-28 17:57:17,770 - --- validate (epoch=21)-----------
+2022-01-28 17:57:17,771 - 300 samples (64 per mini-batch)
+2022-01-28 17:57:18,173 - Test: [    5/    5]    Loss 0.209301    MSE 0.209326    
+2022-01-28 17:57:18,229 - ==> MSE: 0.20933    Loss: 0.209
+
+2022-01-28 17:57:18,233 - ==> Best [MSE: 0.20933   Sparsity:0.00   Params: 139184 on epoch: 21]
+2022-01-28 17:57:18,233 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 17:57:18,245 - 
+
+2022-01-28 17:57:18,245 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:57:19,888 - Epoch: [22][   43/   43]    Overall Loss 0.205236    Objective Loss 0.205236    MSE 0.201846    LR 0.000250    Time 0.038169    
+2022-01-28 17:57:19,945 - --- validate (epoch=22)-----------
+2022-01-28 17:57:19,946 - 300 samples (64 per mini-batch)
+2022-01-28 17:57:20,346 - Test: [    5/    5]    Loss 0.208725    MSE 0.208670    
+2022-01-28 17:57:20,403 - ==> MSE: 0.20867    Loss: 0.209
+
+2022-01-28 17:57:20,407 - ==> Best [MSE: 0.20867   Sparsity:0.00   Params: 139184 on epoch: 22]
+2022-01-28 17:57:20,407 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 17:57:20,419 - 
+
+2022-01-28 17:57:20,420 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:57:22,071 - Epoch: [23][   43/   43]    Overall Loss 0.203406    Objective Loss 0.203406    MSE 0.202936    LR 0.000250    Time 0.038382    
+2022-01-28 17:57:22,134 - --- validate (epoch=23)-----------
+2022-01-28 17:57:22,135 - 300 samples (64 per mini-batch)
+2022-01-28 17:57:22,541 - Test: [    5/    5]    Loss 0.204723    MSE 0.205055    
+2022-01-28 17:57:22,604 - ==> MSE: 0.20506    Loss: 0.205
+
+2022-01-28 17:57:22,611 - ==> Best [MSE: 0.20506   Sparsity:0.00   Params: 139184 on epoch: 23]
+2022-01-28 17:57:22,612 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 17:57:22,625 - 
+
+2022-01-28 17:57:22,625 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:57:24,276 - Epoch: [24][   43/   43]    Overall Loss 0.200142    Objective Loss 0.200142    MSE 0.196889    LR 0.000250    Time 0.038372    
+2022-01-28 17:57:24,336 - --- validate (epoch=24)-----------
+2022-01-28 17:57:24,336 - 300 samples (64 per mini-batch)
+2022-01-28 17:57:24,740 - Test: [    5/    5]    Loss 0.200602    MSE 0.200665    
+2022-01-28 17:57:24,796 - ==> MSE: 0.20067    Loss: 0.201
+
+2022-01-28 17:57:24,800 - ==> Best [MSE: 0.20067   Sparsity:0.00   Params: 139184 on epoch: 24]
+2022-01-28 17:57:24,801 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 17:57:24,813 - 
+
+2022-01-28 17:57:24,813 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:57:26,458 - Epoch: [25][   43/   43]    Overall Loss 0.198443    Objective Loss 0.198443    MSE 0.186382    LR 0.000250    Time 0.038208    
+2022-01-28 17:57:26,512 - --- validate (epoch=25)-----------
+2022-01-28 17:57:26,513 - 300 samples (64 per mini-batch)
+2022-01-28 17:57:26,913 - Test: [    5/    5]    Loss 0.205300    MSE 0.205164    
+2022-01-28 17:57:26,971 - ==> MSE: 0.20516    Loss: 0.205
+
+2022-01-28 17:57:26,979 - ==> Best [MSE: 0.20067   Sparsity:0.00   Params: 139184 on epoch: 24]
+2022-01-28 17:57:26,979 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 17:57:26,991 - 
+
+2022-01-28 17:57:26,991 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:57:28,749 - Epoch: [26][   43/   43]    Overall Loss 0.198827    Objective Loss 0.198827    MSE 0.189696    LR 0.000250    Time 0.040853    
+2022-01-28 17:57:28,806 - --- validate (epoch=26)-----------
+2022-01-28 17:57:28,806 - 300 samples (64 per mini-batch)
+2022-01-28 17:57:29,220 - Test: [    5/    5]    Loss 0.198921    MSE 0.199372    
+2022-01-28 17:57:29,274 - ==> MSE: 0.19937    Loss: 0.199
+
+2022-01-28 17:57:29,281 - ==> Best [MSE: 0.19937   Sparsity:0.00   Params: 139184 on epoch: 26]
+2022-01-28 17:57:29,281 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 17:57:29,295 - 
+
+2022-01-28 17:57:29,295 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:57:30,939 - Epoch: [27][   43/   43]    Overall Loss 0.195231    Objective Loss 0.195231    MSE 0.195991    LR 0.000250    Time 0.038182    
+2022-01-28 17:57:31,001 - --- validate (epoch=27)-----------
+2022-01-28 17:57:31,002 - 300 samples (64 per mini-batch)
+2022-01-28 17:57:31,419 - Test: [    5/    5]    Loss 0.196057    MSE 0.196375    
+2022-01-28 17:57:31,476 - ==> MSE: 0.19638    Loss: 0.196
+
+2022-01-28 17:57:31,484 - ==> Best [MSE: 0.19638   Sparsity:0.00   Params: 139184 on epoch: 27]
+2022-01-28 17:57:31,484 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 17:57:31,496 - 
+
+2022-01-28 17:57:31,496 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:57:33,141 - Epoch: [28][   43/   43]    Overall Loss 0.192896    Objective Loss 0.192896    MSE 0.186329    LR 0.000250    Time 0.038217    
+2022-01-28 17:57:33,196 - --- validate (epoch=28)-----------
+2022-01-28 17:57:33,196 - 300 samples (64 per mini-batch)
+2022-01-28 17:57:33,604 - Test: [    5/    5]    Loss 0.201053    MSE 0.201336    
+2022-01-28 17:57:33,656 - ==> MSE: 0.20134    Loss: 0.201
+
+2022-01-28 17:57:33,662 - ==> Best [MSE: 0.19638   Sparsity:0.00   Params: 139184 on epoch: 27]
+2022-01-28 17:57:33,662 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 17:57:33,672 - 
+
+2022-01-28 17:57:33,672 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:57:35,390 - Epoch: [29][   43/   43]    Overall Loss 0.192411    Objective Loss 0.192411    MSE 0.192107    LR 0.000250    Time 0.039920    
+2022-01-28 17:57:35,442 - --- validate (epoch=29)-----------
+2022-01-28 17:57:35,442 - 300 samples (64 per mini-batch)
+2022-01-28 17:57:35,873 - Test: [    5/    5]    Loss 0.192337    MSE 0.192760    
+2022-01-28 17:57:35,926 - ==> MSE: 0.19276    Loss: 0.192
+
+2022-01-28 17:57:35,934 - ==> Best [MSE: 0.19276   Sparsity:0.00   Params: 139184 on epoch: 29]
+2022-01-28 17:57:35,935 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 17:57:35,949 - 
+
+2022-01-28 17:57:35,949 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:57:37,660 - Epoch: [30][   43/   43]    Overall Loss 0.190047    Objective Loss 0.190047    MSE 0.188582    LR 0.000250    Time 0.039753    
+2022-01-28 17:57:37,718 - --- validate (epoch=30)-----------
+2022-01-28 17:57:37,718 - 300 samples (64 per mini-batch)
+2022-01-28 17:57:38,130 - Test: [    5/    5]    Loss 0.197187    MSE 0.197610    
+2022-01-28 17:57:38,186 - ==> MSE: 0.19761    Loss: 0.197
+
+2022-01-28 17:57:38,191 - ==> Best [MSE: 0.19276   Sparsity:0.00   Params: 139184 on epoch: 29]
+2022-01-28 17:57:38,192 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 17:57:38,202 - 
+
+2022-01-28 17:57:38,202 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:57:39,911 - Epoch: [31][   43/   43]    Overall Loss 0.188697    Objective Loss 0.188697    MSE 0.186863    LR 0.000250    Time 0.039707    
+2022-01-28 17:57:39,966 - --- validate (epoch=31)-----------
+2022-01-28 17:57:39,966 - 300 samples (64 per mini-batch)
+2022-01-28 17:57:40,365 - Test: [    5/    5]    Loss 0.192593    MSE 0.192850    
+2022-01-28 17:57:40,422 - ==> MSE: 0.19285    Loss: 0.193
+
+2022-01-28 17:57:40,431 - ==> Best [MSE: 0.19276   Sparsity:0.00   Params: 139184 on epoch: 29]
+2022-01-28 17:57:40,431 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 17:57:40,442 - 
+
+2022-01-28 17:57:40,442 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:57:42,080 - Epoch: [32][   43/   43]    Overall Loss 0.187134    Objective Loss 0.187134    MSE 0.180106    LR 0.000250    Time 0.038053    
+2022-01-28 17:57:42,136 - --- validate (epoch=32)-----------
+2022-01-28 17:57:42,136 - 300 samples (64 per mini-batch)
+2022-01-28 17:57:42,538 - Test: [    5/    5]    Loss 0.188607    MSE 0.188972    
+2022-01-28 17:57:42,610 - ==> MSE: 0.18897    Loss: 0.189
+
+2022-01-28 17:57:42,616 - ==> Best [MSE: 0.18897   Sparsity:0.00   Params: 139184 on epoch: 32]
+2022-01-28 17:57:42,616 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 17:57:42,628 - 
+
+2022-01-28 17:57:42,628 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:57:44,272 - Epoch: [33][   43/   43]    Overall Loss 0.186665    Objective Loss 0.186665    MSE 0.180468    LR 0.000250    Time 0.038199    
+2022-01-28 17:57:44,326 - --- validate (epoch=33)-----------
+2022-01-28 17:57:44,326 - 300 samples (64 per mini-batch)
+2022-01-28 17:57:44,732 - Test: [    5/    5]    Loss 0.187984    MSE 0.187347    
+2022-01-28 17:57:44,785 - ==> MSE: 0.18735    Loss: 0.188
+
+2022-01-28 17:57:44,791 - ==> Best [MSE: 0.18735   Sparsity:0.00   Params: 139184 on epoch: 33]
+2022-01-28 17:57:44,791 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 17:57:44,804 - 
+
+2022-01-28 17:57:44,804 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:57:46,461 - Epoch: [34][   43/   43]    Overall Loss 0.183971    Objective Loss 0.183971    MSE 0.180324    LR 0.000250    Time 0.038503    
+2022-01-28 17:57:46,516 - --- validate (epoch=34)-----------
+2022-01-28 17:57:46,517 - 300 samples (64 per mini-batch)
+2022-01-28 17:57:46,918 - Test: [    5/    5]    Loss 0.185152    MSE 0.184841    
+2022-01-28 17:57:46,975 - ==> MSE: 0.18484    Loss: 0.185
+
+2022-01-28 17:57:46,982 - ==> Best [MSE: 0.18484   Sparsity:0.00   Params: 139184 on epoch: 34]
+2022-01-28 17:57:46,982 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 17:57:46,994 - 
+
+2022-01-28 17:57:46,994 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:57:48,661 - Epoch: [35][   43/   43]    Overall Loss 0.183976    Objective Loss 0.183976    MSE 0.181716    LR 0.000250    Time 0.038733    
+2022-01-28 17:57:48,717 - --- validate (epoch=35)-----------
+2022-01-28 17:57:48,717 - 300 samples (64 per mini-batch)
+2022-01-28 17:57:49,116 - Test: [    5/    5]    Loss 0.185048    MSE 0.185124    
+2022-01-28 17:57:49,172 - ==> MSE: 0.18512    Loss: 0.185
+
+2022-01-28 17:57:49,179 - ==> Best [MSE: 0.18484   Sparsity:0.00   Params: 139184 on epoch: 34]
+2022-01-28 17:57:49,179 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 17:57:49,189 - 
+
+2022-01-28 17:57:49,189 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:57:50,835 - Epoch: [36][   43/   43]    Overall Loss 0.181755    Objective Loss 0.181755    MSE 0.183537    LR 0.000250    Time 0.038244    
+2022-01-28 17:57:50,897 - --- validate (epoch=36)-----------
+2022-01-28 17:57:50,897 - 300 samples (64 per mini-batch)
+2022-01-28 17:57:51,299 - Test: [    5/    5]    Loss 0.184666    MSE 0.185249    
+2022-01-28 17:57:51,357 - ==> MSE: 0.18525    Loss: 0.185
+
+2022-01-28 17:57:51,368 - ==> Best [MSE: 0.18484   Sparsity:0.00   Params: 139184 on epoch: 34]
+2022-01-28 17:57:51,368 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 17:57:51,378 - 
+
+2022-01-28 17:57:51,378 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:57:53,064 - Epoch: [37][   43/   43]    Overall Loss 0.182678    Objective Loss 0.182678    MSE 0.178508    LR 0.000250    Time 0.039157    
+2022-01-28 17:57:53,128 - --- validate (epoch=37)-----------
+2022-01-28 17:57:53,128 - 300 samples (64 per mini-batch)
+2022-01-28 17:57:53,534 - Test: [    5/    5]    Loss 0.183677    MSE 0.183667    
+2022-01-28 17:57:53,587 - ==> MSE: 0.18367    Loss: 0.184
+
+2022-01-28 17:57:53,594 - ==> Best [MSE: 0.18367   Sparsity:0.00   Params: 139184 on epoch: 37]
+2022-01-28 17:57:53,594 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 17:57:53,606 - 
+
+2022-01-28 17:57:53,607 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:57:55,279 - Epoch: [38][   43/   43]    Overall Loss 0.177750    Objective Loss 0.177750    MSE 0.173556    LR 0.000250    Time 0.038857    
+2022-01-28 17:57:55,337 - --- validate (epoch=38)-----------
+2022-01-28 17:57:55,337 - 300 samples (64 per mini-batch)
+2022-01-28 17:57:55,743 - Test: [    5/    5]    Loss 0.179658    MSE 0.179585    
+2022-01-28 17:57:55,797 - ==> MSE: 0.17959    Loss: 0.180
+
+2022-01-28 17:57:55,807 - ==> Best [MSE: 0.17959   Sparsity:0.00   Params: 139184 on epoch: 38]
+2022-01-28 17:57:55,807 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 17:57:55,819 - 
+
+2022-01-28 17:57:55,820 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:57:57,457 - Epoch: [39][   43/   43]    Overall Loss 0.178012    Objective Loss 0.178012    MSE 0.172924    LR 0.000250    Time 0.038043    
+2022-01-28 17:57:57,509 - --- validate (epoch=39)-----------
+2022-01-28 17:57:57,510 - 300 samples (64 per mini-batch)
+2022-01-28 17:57:57,910 - Test: [    5/    5]    Loss 0.184037    MSE 0.183612    
+2022-01-28 17:57:57,962 - ==> MSE: 0.18361    Loss: 0.184
+
+2022-01-28 17:57:57,970 - ==> Best [MSE: 0.17959   Sparsity:0.00   Params: 139184 on epoch: 38]
+2022-01-28 17:57:57,970 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 17:57:57,981 - 
+
+2022-01-28 17:57:57,981 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:57:59,650 - Epoch: [40][   43/   43]    Overall Loss 0.177238    Objective Loss 0.177238    MSE 0.173424    LR 0.000125    Time 0.038799    
+2022-01-28 17:57:59,706 - --- validate (epoch=40)-----------
+2022-01-28 17:57:59,706 - 300 samples (64 per mini-batch)
+2022-01-28 17:58:00,119 - Test: [    5/    5]    Loss 0.179707    MSE 0.179739    
+2022-01-28 17:58:00,173 - ==> MSE: 0.17974    Loss: 0.180
+
+2022-01-28 17:58:00,181 - ==> Best [MSE: 0.17959   Sparsity:0.00   Params: 139184 on epoch: 38]
+2022-01-28 17:58:00,181 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 17:58:00,191 - 
+
+2022-01-28 17:58:00,191 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:58:01,835 - Epoch: [41][   43/   43]    Overall Loss 0.175608    Objective Loss 0.175608    MSE 0.178865    LR 0.000125    Time 0.038195    
+2022-01-28 17:58:01,903 - --- validate (epoch=41)-----------
+2022-01-28 17:58:01,903 - 300 samples (64 per mini-batch)
+2022-01-28 17:58:02,312 - Test: [    5/    5]    Loss 0.175770    MSE 0.175575    
+2022-01-28 17:58:02,379 - ==> MSE: 0.17557    Loss: 0.176
+
+2022-01-28 17:58:02,392 - ==> Best [MSE: 0.17557   Sparsity:0.00   Params: 139184 on epoch: 41]
+2022-01-28 17:58:02,392 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 17:58:02,404 - 
+
+2022-01-28 17:58:02,404 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:58:04,266 - Epoch: [42][   43/   43]    Overall Loss 0.175950    Objective Loss 0.175950    MSE 0.171925    LR 0.000125    Time 0.043268    
+2022-01-28 17:58:04,322 - --- validate (epoch=42)-----------
+2022-01-28 17:58:04,322 - 300 samples (64 per mini-batch)
+2022-01-28 17:58:04,729 - Test: [    5/    5]    Loss 0.173891    MSE 0.174495    
+2022-01-28 17:58:04,781 - ==> MSE: 0.17450    Loss: 0.174
+
+2022-01-28 17:58:04,790 - ==> Best [MSE: 0.17450   Sparsity:0.00   Params: 139184 on epoch: 42]
+2022-01-28 17:58:04,790 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 17:58:04,802 - 
+
+2022-01-28 17:58:04,802 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:58:06,445 - Epoch: [43][   43/   43]    Overall Loss 0.175318    Objective Loss 0.175318    MSE 0.173669    LR 0.000125    Time 0.038182    
+2022-01-28 17:58:06,510 - --- validate (epoch=43)-----------
+2022-01-28 17:58:06,510 - 300 samples (64 per mini-batch)
+2022-01-28 17:58:06,917 - Test: [    5/    5]    Loss 0.174405    MSE 0.174274    
+2022-01-28 17:58:06,974 - ==> MSE: 0.17427    Loss: 0.174
+
+2022-01-28 17:58:06,983 - ==> Best [MSE: 0.17427   Sparsity:0.00   Params: 139184 on epoch: 43]
+2022-01-28 17:58:06,983 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 17:58:06,995 - 
+
+2022-01-28 17:58:06,996 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:58:08,680 - Epoch: [44][   43/   43]    Overall Loss 0.174040    Objective Loss 0.174040    MSE 0.170656    LR 0.000125    Time 0.039139    
+2022-01-28 17:58:08,735 - --- validate (epoch=44)-----------
+2022-01-28 17:58:08,736 - 300 samples (64 per mini-batch)
+2022-01-28 17:58:09,132 - Test: [    5/    5]    Loss 0.173824    MSE 0.174001    
+2022-01-28 17:58:09,189 - ==> MSE: 0.17400    Loss: 0.174
+
+2022-01-28 17:58:09,198 - ==> Best [MSE: 0.17400   Sparsity:0.00   Params: 139184 on epoch: 44]
+2022-01-28 17:58:09,199 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 17:58:09,211 - 
+
+2022-01-28 17:58:09,211 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:58:10,969 - Epoch: [45][   43/   43]    Overall Loss 0.173815    Objective Loss 0.173815    MSE 0.176023    LR 0.000125    Time 0.040852    
+2022-01-28 17:58:11,038 - --- validate (epoch=45)-----------
+2022-01-28 17:58:11,038 - 300 samples (64 per mini-batch)
+2022-01-28 17:58:11,467 - Test: [    5/    5]    Loss 0.173590    MSE 0.173708    
+2022-01-28 17:58:11,525 - ==> MSE: 0.17371    Loss: 0.174
+
+2022-01-28 17:58:11,538 - ==> Best [MSE: 0.17371   Sparsity:0.00   Params: 139184 on epoch: 45]
+2022-01-28 17:58:11,538 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 17:58:11,552 - 
+
+2022-01-28 17:58:11,552 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:58:13,342 - Epoch: [46][   43/   43]    Overall Loss 0.172645    Objective Loss 0.172645    MSE 0.168164    LR 0.000125    Time 0.041604    
+2022-01-28 17:58:13,405 - --- validate (epoch=46)-----------
+2022-01-28 17:58:13,406 - 300 samples (64 per mini-batch)
+2022-01-28 17:58:13,814 - Test: [    5/    5]    Loss 0.173564    MSE 0.173528    
+2022-01-28 17:58:13,867 - ==> MSE: 0.17353    Loss: 0.174
+
+2022-01-28 17:58:13,879 - ==> Best [MSE: 0.17353   Sparsity:0.00   Params: 139184 on epoch: 46]
+2022-01-28 17:58:13,880 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 17:58:13,892 - 
+
+2022-01-28 17:58:13,892 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:58:15,552 - Epoch: [47][   43/   43]    Overall Loss 0.173118    Objective Loss 0.173118    MSE 0.172742    LR 0.000125    Time 0.038583    
+2022-01-28 17:58:15,610 - --- validate (epoch=47)-----------
+2022-01-28 17:58:15,610 - 300 samples (64 per mini-batch)
+2022-01-28 17:58:16,017 - Test: [    5/    5]    Loss 0.173233    MSE 0.173203    
+2022-01-28 17:58:16,081 - ==> MSE: 0.17320    Loss: 0.173
+
+2022-01-28 17:58:16,091 - ==> Best [MSE: 0.17320   Sparsity:0.00   Params: 139184 on epoch: 47]
+2022-01-28 17:58:16,091 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 17:58:16,104 - 
+
+2022-01-28 17:58:16,104 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:58:17,759 - Epoch: [48][   43/   43]    Overall Loss 0.172196    Objective Loss 0.172196    MSE 0.170330    LR 0.000125    Time 0.038473    
+2022-01-28 17:58:17,815 - --- validate (epoch=48)-----------
+2022-01-28 17:58:17,815 - 300 samples (64 per mini-batch)
+2022-01-28 17:58:18,216 - Test: [    5/    5]    Loss 0.171586    MSE 0.171413    
+2022-01-28 17:58:18,277 - ==> MSE: 0.17141    Loss: 0.172
+
+2022-01-28 17:58:18,291 - ==> Best [MSE: 0.17141   Sparsity:0.00   Params: 139184 on epoch: 48]
+2022-01-28 17:58:18,291 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 17:58:18,303 - 
+
+2022-01-28 17:58:18,304 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:58:20,055 - Epoch: [49][   43/   43]    Overall Loss 0.171772    Objective Loss 0.171772    MSE 0.171832    LR 0.000125    Time 0.040692    
+2022-01-28 17:58:20,116 - --- validate (epoch=49)-----------
+2022-01-28 17:58:20,116 - 300 samples (64 per mini-batch)
+2022-01-28 17:58:20,550 - Test: [    5/    5]    Loss 0.170343    MSE 0.169688    
+2022-01-28 17:58:20,606 - ==> MSE: 0.16969    Loss: 0.170
+
+2022-01-28 17:58:20,620 - ==> Best [MSE: 0.16969   Sparsity:0.00   Params: 139184 on epoch: 49]
+2022-01-28 17:58:20,620 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 17:58:20,634 - 
+
+2022-01-28 17:58:20,634 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:58:22,325 - Epoch: [50][   43/   43]    Overall Loss 0.171380    Objective Loss 0.171380    MSE 0.172071    LR 0.000125    Time 0.039291    
+2022-01-28 17:58:22,384 - --- validate (epoch=50)-----------
+2022-01-28 17:58:22,384 - 300 samples (64 per mini-batch)
+2022-01-28 17:58:22,781 - Test: [    5/    5]    Loss 0.172901    MSE 0.172522    
+2022-01-28 17:58:22,837 - ==> MSE: 0.17252    Loss: 0.173
+
+2022-01-28 17:58:22,848 - ==> Best [MSE: 0.16969   Sparsity:0.00   Params: 139184 on epoch: 49]
+2022-01-28 17:58:22,848 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 17:58:22,858 - 
+
+2022-01-28 17:58:22,858 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:58:24,519 - Epoch: [51][   43/   43]    Overall Loss 0.170322    Objective Loss 0.170322    MSE 0.168764    LR 0.000125    Time 0.038598    
+2022-01-28 17:58:24,581 - --- validate (epoch=51)-----------
+2022-01-28 17:58:24,581 - 300 samples (64 per mini-batch)
+2022-01-28 17:58:24,989 - Test: [    5/    5]    Loss 0.171533    MSE 0.171500    
+2022-01-28 17:58:25,045 - ==> MSE: 0.17150    Loss: 0.172
+
+2022-01-28 17:58:25,056 - ==> Best [MSE: 0.16969   Sparsity:0.00   Params: 139184 on epoch: 49]
+2022-01-28 17:58:25,056 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 17:58:25,067 - 
+
+2022-01-28 17:58:25,067 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:58:26,728 - Epoch: [52][   43/   43]    Overall Loss 0.170046    Objective Loss 0.170046    MSE 0.166800    LR 0.000125    Time 0.038595    
+2022-01-28 17:58:26,785 - --- validate (epoch=52)-----------
+2022-01-28 17:58:26,786 - 300 samples (64 per mini-batch)
+2022-01-28 17:58:27,192 - Test: [    5/    5]    Loss 0.171291    MSE 0.170634    
+2022-01-28 17:58:27,246 - ==> MSE: 0.17063    Loss: 0.171
+
+2022-01-28 17:58:27,260 - ==> Best [MSE: 0.16969   Sparsity:0.00   Params: 139184 on epoch: 49]
+2022-01-28 17:58:27,261 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 17:58:27,271 - 
+
+2022-01-28 17:58:27,271 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:58:28,958 - Epoch: [53][   43/   43]    Overall Loss 0.169542    Objective Loss 0.169542    MSE 0.168907    LR 0.000125    Time 0.039202    
+2022-01-28 17:58:29,012 - --- validate (epoch=53)-----------
+2022-01-28 17:58:29,012 - 300 samples (64 per mini-batch)
+2022-01-28 17:58:29,420 - Test: [    5/    5]    Loss 0.168786    MSE 0.168826    
+2022-01-28 17:58:29,474 - ==> MSE: 0.16883    Loss: 0.169
+
+2022-01-28 17:58:29,490 - ==> Best [MSE: 0.16883   Sparsity:0.00   Params: 139184 on epoch: 53]
+2022-01-28 17:58:29,490 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 17:58:29,503 - 
+
+2022-01-28 17:58:29,503 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:58:31,178 - Epoch: [54][   43/   43]    Overall Loss 0.169610    Objective Loss 0.169610    MSE 0.173678    LR 0.000125    Time 0.038917    
+2022-01-28 17:58:31,238 - --- validate (epoch=54)-----------
+2022-01-28 17:58:31,238 - 300 samples (64 per mini-batch)
+2022-01-28 17:58:31,642 - Test: [    5/    5]    Loss 0.170153    MSE 0.170238    
+2022-01-28 17:58:31,700 - ==> MSE: 0.17024    Loss: 0.170
+
+2022-01-28 17:58:31,712 - ==> Best [MSE: 0.16883   Sparsity:0.00   Params: 139184 on epoch: 53]
+2022-01-28 17:58:31,712 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 17:58:31,723 - 
+
+2022-01-28 17:58:31,723 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:58:33,416 - Epoch: [55][   43/   43]    Overall Loss 0.168647    Objective Loss 0.168647    MSE 0.169752    LR 0.000125    Time 0.039345    
+2022-01-28 17:58:33,469 - --- validate (epoch=55)-----------
+2022-01-28 17:58:33,469 - 300 samples (64 per mini-batch)
+2022-01-28 17:58:33,872 - Test: [    5/    5]    Loss 0.169395    MSE 0.169918    
+2022-01-28 17:58:33,931 - ==> MSE: 0.16992    Loss: 0.169
+
+2022-01-28 17:58:33,943 - ==> Best [MSE: 0.16883   Sparsity:0.00   Params: 139184 on epoch: 53]
+2022-01-28 17:58:33,943 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 17:58:33,953 - 
+
+2022-01-28 17:58:33,953 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:58:35,621 - Epoch: [56][   43/   43]    Overall Loss 0.168206    Objective Loss 0.168206    MSE 0.164761    LR 0.000125    Time 0.038762    
+2022-01-28 17:58:35,686 - --- validate (epoch=56)-----------
+2022-01-28 17:58:35,686 - 300 samples (64 per mini-batch)
+2022-01-28 17:58:36,091 - Test: [    5/    5]    Loss 0.171776    MSE 0.172152    
+2022-01-28 17:58:36,154 - ==> MSE: 0.17215    Loss: 0.172
+
+2022-01-28 17:58:36,167 - ==> Best [MSE: 0.16883   Sparsity:0.00   Params: 139184 on epoch: 53]
+2022-01-28 17:58:36,167 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 17:58:36,177 - 
+
+2022-01-28 17:58:36,177 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:58:37,993 - Epoch: [57][   43/   43]    Overall Loss 0.168535    Objective Loss 0.168535    MSE 0.164699    LR 0.000125    Time 0.042179    
+2022-01-28 17:58:38,047 - --- validate (epoch=57)-----------
+2022-01-28 17:58:38,047 - 300 samples (64 per mini-batch)
+2022-01-28 17:58:38,453 - Test: [    5/    5]    Loss 0.171957    MSE 0.171085    
+2022-01-28 17:58:38,508 - ==> MSE: 0.17109    Loss: 0.172
+
+2022-01-28 17:58:38,523 - ==> Best [MSE: 0.16883   Sparsity:0.00   Params: 139184 on epoch: 53]
+2022-01-28 17:58:38,523 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 17:58:38,534 - 
+
+2022-01-28 17:58:38,534 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:58:40,183 - Epoch: [58][   43/   43]    Overall Loss 0.168197    Objective Loss 0.168197    MSE 0.168190    LR 0.000125    Time 0.038327    
+2022-01-28 17:58:40,238 - --- validate (epoch=58)-----------
+2022-01-28 17:58:40,238 - 300 samples (64 per mini-batch)
+2022-01-28 17:58:40,637 - Test: [    5/    5]    Loss 0.170991    MSE 0.170897    
+2022-01-28 17:58:40,706 - ==> MSE: 0.17090    Loss: 0.171
+
+2022-01-28 17:58:40,719 - ==> Best [MSE: 0.16883   Sparsity:0.00   Params: 139184 on epoch: 53]
+2022-01-28 17:58:40,720 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 17:58:40,730 - 
+
+2022-01-28 17:58:40,730 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:58:42,380 - Epoch: [59][   43/   43]    Overall Loss 0.166910    Objective Loss 0.166910    MSE 0.156902    LR 0.000125    Time 0.038326    
+2022-01-28 17:58:42,443 - --- validate (epoch=59)-----------
+2022-01-28 17:58:42,443 - 300 samples (64 per mini-batch)
+2022-01-28 17:58:42,844 - Test: [    5/    5]    Loss 0.169857    MSE 0.169670    
+2022-01-28 17:58:42,900 - ==> MSE: 0.16967    Loss: 0.170
+
+2022-01-28 17:58:42,913 - ==> Best [MSE: 0.16883   Sparsity:0.00   Params: 139184 on epoch: 53]
+2022-01-28 17:58:42,913 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 17:58:42,923 - 
+
+2022-01-28 17:58:42,924 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:58:44,583 - Epoch: [60][   43/   43]    Overall Loss 0.166950    Objective Loss 0.166950    MSE 0.163233    LR 0.000063    Time 0.038554    
+2022-01-28 17:58:44,638 - --- validate (epoch=60)-----------
+2022-01-28 17:58:44,638 - 300 samples (64 per mini-batch)
+2022-01-28 17:58:45,040 - Test: [    5/    5]    Loss 0.165400    MSE 0.165630    
+2022-01-28 17:58:45,098 - ==> MSE: 0.16563    Loss: 0.165
+
+2022-01-28 17:58:45,115 - ==> Best [MSE: 0.16563   Sparsity:0.00   Params: 139184 on epoch: 60]
+2022-01-28 17:58:45,116 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 17:58:45,128 - 
+
+2022-01-28 17:58:45,128 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:58:46,774 - Epoch: [61][   43/   43]    Overall Loss 0.166480    Objective Loss 0.166480    MSE 0.162167    LR 0.000063    Time 0.038250    
+2022-01-28 17:58:46,829 - --- validate (epoch=61)-----------
+2022-01-28 17:58:46,830 - 300 samples (64 per mini-batch)
+2022-01-28 17:58:47,232 - Test: [    5/    5]    Loss 0.164339    MSE 0.164864    
+2022-01-28 17:58:47,288 - ==> MSE: 0.16486    Loss: 0.164
+
+2022-01-28 17:58:47,302 - ==> Best [MSE: 0.16486   Sparsity:0.00   Params: 139184 on epoch: 61]
+2022-01-28 17:58:47,302 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 17:58:47,316 - 
+
+2022-01-28 17:58:47,316 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:58:48,993 - Epoch: [62][   43/   43]    Overall Loss 0.165611    Objective Loss 0.165611    MSE 0.157967    LR 0.000063    Time 0.038973    
+2022-01-28 17:58:49,047 - --- validate (epoch=62)-----------
+2022-01-28 17:58:49,048 - 300 samples (64 per mini-batch)
+2022-01-28 17:58:49,458 - Test: [    5/    5]    Loss 0.166588    MSE 0.166653    
+2022-01-28 17:58:49,513 - ==> MSE: 0.16665    Loss: 0.167
+
+2022-01-28 17:58:49,529 - ==> Best [MSE: 0.16486   Sparsity:0.00   Params: 139184 on epoch: 61]
+2022-01-28 17:58:49,529 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 17:58:49,539 - 
+
+2022-01-28 17:58:49,539 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:58:51,193 - Epoch: [63][   43/   43]    Overall Loss 0.166062    Objective Loss 0.166062    MSE 0.166195    LR 0.000063    Time 0.038423    
+2022-01-28 17:58:51,255 - --- validate (epoch=63)-----------
+2022-01-28 17:58:51,255 - 300 samples (64 per mini-batch)
+2022-01-28 17:58:51,661 - Test: [    5/    5]    Loss 0.166188    MSE 0.166126    
+2022-01-28 17:58:51,715 - ==> MSE: 0.16613    Loss: 0.166
+
+2022-01-28 17:58:51,729 - ==> Best [MSE: 0.16486   Sparsity:0.00   Params: 139184 on epoch: 61]
+2022-01-28 17:58:51,729 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 17:58:51,739 - 
+
+2022-01-28 17:58:51,740 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:58:53,418 - Epoch: [64][   43/   43]    Overall Loss 0.165134    Objective Loss 0.165134    MSE 0.163742    LR 0.000063    Time 0.038991    
+2022-01-28 17:58:53,472 - --- validate (epoch=64)-----------
+2022-01-28 17:58:53,473 - 300 samples (64 per mini-batch)
+2022-01-28 17:58:53,881 - Test: [    5/    5]    Loss 0.166310    MSE 0.166181    
+2022-01-28 17:58:53,937 - ==> MSE: 0.16618    Loss: 0.166
+
+2022-01-28 17:58:53,952 - ==> Best [MSE: 0.16486   Sparsity:0.00   Params: 139184 on epoch: 61]
+2022-01-28 17:58:53,952 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 17:58:53,962 - 
+
+2022-01-28 17:58:53,962 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:58:55,752 - Epoch: [65][   43/   43]    Overall Loss 0.165265    Objective Loss 0.165265    MSE 0.162510    LR 0.000063    Time 0.041593    
+2022-01-28 17:58:55,811 - --- validate (epoch=65)-----------
+2022-01-28 17:58:55,811 - 300 samples (64 per mini-batch)
+2022-01-28 17:58:56,216 - Test: [    5/    5]    Loss 0.165990    MSE 0.165672    
+2022-01-28 17:58:56,272 - ==> MSE: 0.16567    Loss: 0.166
+
+2022-01-28 17:58:56,287 - ==> Best [MSE: 0.16486   Sparsity:0.00   Params: 139184 on epoch: 61]
+2022-01-28 17:58:56,288 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 17:58:56,298 - 
+
+2022-01-28 17:58:56,298 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:58:57,968 - Epoch: [66][   43/   43]    Overall Loss 0.164229    Objective Loss 0.164229    MSE 0.163965    LR 0.000063    Time 0.038801    
+2022-01-28 17:58:58,028 - --- validate (epoch=66)-----------
+2022-01-28 17:58:58,028 - 300 samples (64 per mini-batch)
+2022-01-28 17:58:58,438 - Test: [    5/    5]    Loss 0.166040    MSE 0.166012    
+2022-01-28 17:58:58,504 - ==> MSE: 0.16601    Loss: 0.166
+
+2022-01-28 17:58:58,519 - ==> Best [MSE: 0.16486   Sparsity:0.00   Params: 139184 on epoch: 61]
+2022-01-28 17:58:58,519 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 17:58:58,529 - 
+
+2022-01-28 17:58:58,529 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:59:00,185 - Epoch: [67][   43/   43]    Overall Loss 0.165629    Objective Loss 0.165629    MSE 0.167484    LR 0.000063    Time 0.038468    
+2022-01-28 17:59:00,236 - --- validate (epoch=67)-----------
+2022-01-28 17:59:00,237 - 300 samples (64 per mini-batch)
+2022-01-28 17:59:00,645 - Test: [    5/    5]    Loss 0.165168    MSE 0.165056    
+2022-01-28 17:59:00,700 - ==> MSE: 0.16506    Loss: 0.165
+
+2022-01-28 17:59:00,720 - ==> Best [MSE: 0.16486   Sparsity:0.00   Params: 139184 on epoch: 61]
+2022-01-28 17:59:00,720 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 17:59:00,731 - 
+
+2022-01-28 17:59:00,731 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:59:02,400 - Epoch: [68][   43/   43]    Overall Loss 0.164824    Objective Loss 0.164824    MSE 0.164364    LR 0.000063    Time 0.038779    
+2022-01-28 17:59:02,455 - --- validate (epoch=68)-----------
+2022-01-28 17:59:02,455 - 300 samples (64 per mini-batch)
+2022-01-28 17:59:02,850 - Test: [    5/    5]    Loss 0.165681    MSE 0.166144    
+2022-01-28 17:59:02,904 - ==> MSE: 0.16614    Loss: 0.166
+
+2022-01-28 17:59:02,920 - ==> Best [MSE: 0.16486   Sparsity:0.00   Params: 139184 on epoch: 61]
+2022-01-28 17:59:02,920 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 17:59:02,930 - 
+
+2022-01-28 17:59:02,931 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:59:04,599 - Epoch: [69][   43/   43]    Overall Loss 0.164640    Objective Loss 0.164640    MSE 0.161611    LR 0.000063    Time 0.038767    
+2022-01-28 17:59:04,654 - --- validate (epoch=69)-----------
+2022-01-28 17:59:04,654 - 300 samples (64 per mini-batch)
+2022-01-28 17:59:05,085 - Test: [    5/    5]    Loss 0.165223    MSE 0.165406    
+2022-01-28 17:59:05,141 - ==> MSE: 0.16541    Loss: 0.165
+
+2022-01-28 17:59:05,167 - ==> Best [MSE: 0.16486   Sparsity:0.00   Params: 139184 on epoch: 61]
+2022-01-28 17:59:05,167 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 17:59:05,179 - 
+
+2022-01-28 17:59:05,180 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:59:06,992 - Epoch: [70][   43/   43]    Overall Loss 0.164478    Objective Loss 0.164478    MSE 0.160783    LR 0.000063    Time 0.042116    
+2022-01-28 17:59:07,057 - --- validate (epoch=70)-----------
+2022-01-28 17:59:07,057 - 300 samples (64 per mini-batch)
+2022-01-28 17:59:07,463 - Test: [    5/    5]    Loss 0.167221    MSE 0.167733    
+2022-01-28 17:59:07,515 - ==> MSE: 0.16773    Loss: 0.167
+
+2022-01-28 17:59:07,531 - ==> Best [MSE: 0.16486   Sparsity:0.00   Params: 139184 on epoch: 61]
+2022-01-28 17:59:07,532 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 17:59:07,542 - 
+
+2022-01-28 17:59:07,542 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:59:09,357 - Epoch: [71][   43/   43]    Overall Loss 0.164805    Objective Loss 0.164805    MSE 0.160059    LR 0.000063    Time 0.042164    
+2022-01-28 17:59:09,429 - --- validate (epoch=71)-----------
+2022-01-28 17:59:09,430 - 300 samples (64 per mini-batch)
+2022-01-28 17:59:09,861 - Test: [    5/    5]    Loss 0.164791    MSE 0.164358    
+2022-01-28 17:59:09,918 - ==> MSE: 0.16436    Loss: 0.165
+
+2022-01-28 17:59:09,941 - ==> Best [MSE: 0.16436   Sparsity:0.00   Params: 139184 on epoch: 71]
+2022-01-28 17:59:09,942 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 17:59:09,955 - 
+
+2022-01-28 17:59:09,956 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:59:11,633 - Epoch: [72][   43/   43]    Overall Loss 0.164237    Objective Loss 0.164237    MSE 0.158470    LR 0.000063    Time 0.038982    
+2022-01-28 17:59:11,688 - --- validate (epoch=72)-----------
+2022-01-28 17:59:11,688 - 300 samples (64 per mini-batch)
+2022-01-28 17:59:12,085 - Test: [    5/    5]    Loss 0.163167    MSE 0.163200    
+2022-01-28 17:59:12,142 - ==> MSE: 0.16320    Loss: 0.163
+
+2022-01-28 17:59:12,159 - ==> Best [MSE: 0.16320   Sparsity:0.00   Params: 139184 on epoch: 72]
+2022-01-28 17:59:12,159 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 17:59:12,171 - 
+
+2022-01-28 17:59:12,171 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:59:13,824 - Epoch: [73][   43/   43]    Overall Loss 0.164928    Objective Loss 0.164928    MSE 0.162601    LR 0.000063    Time 0.038399    
+2022-01-28 17:59:13,879 - --- validate (epoch=73)-----------
+2022-01-28 17:59:13,880 - 300 samples (64 per mini-batch)
+2022-01-28 17:59:14,286 - Test: [    5/    5]    Loss 0.164186    MSE 0.164202    
+2022-01-28 17:59:14,341 - ==> MSE: 0.16420    Loss: 0.164
+
+2022-01-28 17:59:14,351 - ==> Best [MSE: 0.16320   Sparsity:0.00   Params: 139184 on epoch: 72]
+2022-01-28 17:59:14,352 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 17:59:14,362 - 
+
+2022-01-28 17:59:14,362 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:59:16,020 - Epoch: [74][   43/   43]    Overall Loss 0.164377    Objective Loss 0.164377    MSE 0.159896    LR 0.000063    Time 0.038535    
+2022-01-28 17:59:16,080 - --- validate (epoch=74)-----------
+2022-01-28 17:59:16,080 - 300 samples (64 per mini-batch)
+2022-01-28 17:59:16,481 - Test: [    5/    5]    Loss 0.166983    MSE 0.167001    
+2022-01-28 17:59:16,534 - ==> MSE: 0.16700    Loss: 0.167
+
+2022-01-28 17:59:16,547 - ==> Best [MSE: 0.16320   Sparsity:0.00   Params: 139184 on epoch: 72]
+2022-01-28 17:59:16,547 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 17:59:16,557 - 
+
+2022-01-28 17:59:16,557 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:59:18,396 - Epoch: [75][   43/   43]    Overall Loss 0.163402    Objective Loss 0.163402    MSE 0.155791    LR 0.000063    Time 0.042726    
+2022-01-28 17:59:18,452 - --- validate (epoch=75)-----------
+2022-01-28 17:59:18,452 - 300 samples (64 per mini-batch)
+2022-01-28 17:59:18,876 - Test: [    5/    5]    Loss 0.166102    MSE 0.166612    
+2022-01-28 17:59:18,929 - ==> MSE: 0.16661    Loss: 0.166
+
+2022-01-28 17:59:18,943 - ==> Best [MSE: 0.16320   Sparsity:0.00   Params: 139184 on epoch: 72]
+2022-01-28 17:59:18,943 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 17:59:18,954 - 
+
+2022-01-28 17:59:18,954 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:59:20,714 - Epoch: [76][   43/   43]    Overall Loss 0.163412    Objective Loss 0.163412    MSE 0.164501    LR 0.000063    Time 0.040909    
+2022-01-28 17:59:20,776 - --- validate (epoch=76)-----------
+2022-01-28 17:59:20,777 - 300 samples (64 per mini-batch)
+2022-01-28 17:59:21,193 - Test: [    5/    5]    Loss 0.166304    MSE 0.166244    
+2022-01-28 17:59:21,245 - ==> MSE: 0.16624    Loss: 0.166
+
+2022-01-28 17:59:21,260 - ==> Best [MSE: 0.16320   Sparsity:0.00   Params: 139184 on epoch: 72]
+2022-01-28 17:59:21,260 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 17:59:21,271 - 
+
+2022-01-28 17:59:21,271 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:59:22,924 - Epoch: [77][   43/   43]    Overall Loss 0.163123    Objective Loss 0.163123    MSE 0.160930    LR 0.000063    Time 0.038417    
+2022-01-28 17:59:22,981 - --- validate (epoch=77)-----------
+2022-01-28 17:59:22,982 - 300 samples (64 per mini-batch)
+2022-01-28 17:59:23,383 - Test: [    5/    5]    Loss 0.162657    MSE 0.162796    
+2022-01-28 17:59:23,437 - ==> MSE: 0.16280    Loss: 0.163
+
+2022-01-28 17:59:23,452 - ==> Best [MSE: 0.16280   Sparsity:0.00   Params: 139184 on epoch: 77]
+2022-01-28 17:59:23,452 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 17:59:23,465 - 
+
+2022-01-28 17:59:23,465 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:59:25,158 - Epoch: [78][   43/   43]    Overall Loss 0.162028    Objective Loss 0.162028    MSE 0.157820    LR 0.000063    Time 0.039330    
+2022-01-28 17:59:25,214 - --- validate (epoch=78)-----------
+2022-01-28 17:59:25,214 - 300 samples (64 per mini-batch)
+2022-01-28 17:59:25,618 - Test: [    5/    5]    Loss 0.163098    MSE 0.162871    
+2022-01-28 17:59:25,674 - ==> MSE: 0.16287    Loss: 0.163
+
+2022-01-28 17:59:25,686 - ==> Best [MSE: 0.16280   Sparsity:0.00   Params: 139184 on epoch: 77]
+2022-01-28 17:59:25,686 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 17:59:25,696 - 
+
+2022-01-28 17:59:25,696 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:59:27,359 - Epoch: [79][   43/   43]    Overall Loss 0.163002    Objective Loss 0.163002    MSE 0.159192    LR 0.000063    Time 0.038632    
+2022-01-28 17:59:27,416 - --- validate (epoch=79)-----------
+2022-01-28 17:59:27,416 - 300 samples (64 per mini-batch)
+2022-01-28 17:59:27,821 - Test: [    5/    5]    Loss 0.162854    MSE 0.162755    
+2022-01-28 17:59:27,875 - ==> MSE: 0.16276    Loss: 0.163
+
+2022-01-28 17:59:27,887 - ==> Best [MSE: 0.16276   Sparsity:0.00   Params: 139184 on epoch: 79]
+2022-01-28 17:59:27,887 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 17:59:27,900 - 
+
+2022-01-28 17:59:27,900 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:59:29,571 - Epoch: [80][   43/   43]    Overall Loss 0.162029    Objective Loss 0.162029    MSE 0.162728    LR 0.000031    Time 0.038825    
+2022-01-28 17:59:29,624 - --- validate (epoch=80)-----------
+2022-01-28 17:59:29,624 - 300 samples (64 per mini-batch)
+2022-01-28 17:59:30,028 - Test: [    5/    5]    Loss 0.163203    MSE 0.162817    
+2022-01-28 17:59:30,084 - ==> MSE: 0.16282    Loss: 0.163
+
+2022-01-28 17:59:30,096 - ==> Best [MSE: 0.16276   Sparsity:0.00   Params: 139184 on epoch: 79]
+2022-01-28 17:59:30,096 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 17:59:30,107 - 
+
+2022-01-28 17:59:30,107 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:59:31,765 - Epoch: [81][   43/   43]    Overall Loss 0.161776    Objective Loss 0.161776    MSE 0.164124    LR 0.000031    Time 0.038533    
+2022-01-28 17:59:31,826 - --- validate (epoch=81)-----------
+2022-01-28 17:59:31,826 - 300 samples (64 per mini-batch)
+2022-01-28 17:59:32,231 - Test: [    5/    5]    Loss 0.162541    MSE 0.162402    
+2022-01-28 17:59:32,287 - ==> MSE: 0.16240    Loss: 0.163
+
+2022-01-28 17:59:32,303 - ==> Best [MSE: 0.16240   Sparsity:0.00   Params: 139184 on epoch: 81]
+2022-01-28 17:59:32,304 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 17:59:32,316 - 
+
+2022-01-28 17:59:32,316 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:59:34,002 - Epoch: [82][   43/   43]    Overall Loss 0.161822    Objective Loss 0.161822    MSE 0.160271    LR 0.000031    Time 0.039182    
+2022-01-28 17:59:34,056 - --- validate (epoch=82)-----------
+2022-01-28 17:59:34,057 - 300 samples (64 per mini-batch)
+2022-01-28 17:59:34,470 - Test: [    5/    5]    Loss 0.162020    MSE 0.161985    
+2022-01-28 17:59:34,523 - ==> MSE: 0.16198    Loss: 0.162
+
+2022-01-28 17:59:34,535 - ==> Best [MSE: 0.16198   Sparsity:0.00   Params: 139184 on epoch: 82]
+2022-01-28 17:59:34,535 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 17:59:34,548 - 
+
+2022-01-28 17:59:34,548 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:59:36,173 - Epoch: [83][   43/   43]    Overall Loss 0.162745    Objective Loss 0.162745    MSE 0.161014    LR 0.000031    Time 0.037755    
+2022-01-28 17:59:36,230 - --- validate (epoch=83)-----------
+2022-01-28 17:59:36,231 - 300 samples (64 per mini-batch)
+2022-01-28 17:59:36,629 - Test: [    5/    5]    Loss 0.162726    MSE 0.162519    
+2022-01-28 17:59:36,681 - ==> MSE: 0.16252    Loss: 0.163
+
+2022-01-28 17:59:36,693 - ==> Best [MSE: 0.16198   Sparsity:0.00   Params: 139184 on epoch: 82]
+2022-01-28 17:59:36,693 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 17:59:36,703 - 
+
+2022-01-28 17:59:36,704 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:59:38,452 - Epoch: [84][   43/   43]    Overall Loss 0.160850    Objective Loss 0.160850    MSE 0.159549    LR 0.000031    Time 0.040638    
+2022-01-28 17:59:38,521 - --- validate (epoch=84)-----------
+2022-01-28 17:59:38,521 - 300 samples (64 per mini-batch)
+2022-01-28 17:59:38,924 - Test: [    5/    5]    Loss 0.162237    MSE 0.162606    
+2022-01-28 17:59:38,982 - ==> MSE: 0.16261    Loss: 0.162
+
+2022-01-28 17:59:38,996 - ==> Best [MSE: 0.16198   Sparsity:0.00   Params: 139184 on epoch: 82]
+2022-01-28 17:59:38,996 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 17:59:39,006 - 
+
+2022-01-28 17:59:39,007 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:59:40,664 - Epoch: [85][   43/   43]    Overall Loss 0.161810    Objective Loss 0.161810    MSE 0.160660    LR 0.000031    Time 0.038518    
+2022-01-28 17:59:40,726 - --- validate (epoch=85)-----------
+2022-01-28 17:59:40,726 - 300 samples (64 per mini-batch)
+2022-01-28 17:59:41,130 - Test: [    5/    5]    Loss 0.162302    MSE 0.162846    
+2022-01-28 17:59:41,193 - ==> MSE: 0.16285    Loss: 0.162
+
+2022-01-28 17:59:41,206 - ==> Best [MSE: 0.16198   Sparsity:0.00   Params: 139184 on epoch: 82]
+2022-01-28 17:59:41,206 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 17:59:41,216 - 
+
+2022-01-28 17:59:41,216 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:59:42,972 - Epoch: [86][   43/   43]    Overall Loss 0.162289    Objective Loss 0.162289    MSE 0.159303    LR 0.000031    Time 0.040793    
+2022-01-28 17:59:43,036 - --- validate (epoch=86)-----------
+2022-01-28 17:59:43,036 - 300 samples (64 per mini-batch)
+2022-01-28 17:59:43,467 - Test: [    5/    5]    Loss 0.162660    MSE 0.162466    
+2022-01-28 17:59:43,520 - ==> MSE: 0.16247    Loss: 0.163
+
+2022-01-28 17:59:43,537 - ==> Best [MSE: 0.16198   Sparsity:0.00   Params: 139184 on epoch: 82]
+2022-01-28 17:59:43,538 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 17:59:43,548 - 
+
+2022-01-28 17:59:43,548 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:59:45,220 - Epoch: [87][   43/   43]    Overall Loss 0.161399    Objective Loss 0.161399    MSE 0.160675    LR 0.000031    Time 0.038849    
+2022-01-28 17:59:45,284 - --- validate (epoch=87)-----------
+2022-01-28 17:59:45,284 - 300 samples (64 per mini-batch)
+2022-01-28 17:59:45,686 - Test: [    5/    5]    Loss 0.161350    MSE 0.161662    
+2022-01-28 17:59:45,742 - ==> MSE: 0.16166    Loss: 0.161
+
+2022-01-28 17:59:45,755 - ==> Best [MSE: 0.16166   Sparsity:0.00   Params: 139184 on epoch: 87]
+2022-01-28 17:59:45,755 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 17:59:45,767 - 
+
+2022-01-28 17:59:45,767 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:59:47,448 - Epoch: [88][   43/   43]    Overall Loss 0.161127    Objective Loss 0.161127    MSE 0.156504    LR 0.000031    Time 0.039049    
+2022-01-28 17:59:47,504 - --- validate (epoch=88)-----------
+2022-01-28 17:59:47,504 - 300 samples (64 per mini-batch)
+2022-01-28 17:59:47,907 - Test: [    5/    5]    Loss 0.162205    MSE 0.162560    
+2022-01-28 17:59:47,963 - ==> MSE: 0.16256    Loss: 0.162
+
+2022-01-28 17:59:47,977 - ==> Best [MSE: 0.16166   Sparsity:0.00   Params: 139184 on epoch: 87]
+2022-01-28 17:59:47,977 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 17:59:47,987 - 
+
+2022-01-28 17:59:47,987 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:59:49,674 - Epoch: [89][   43/   43]    Overall Loss 0.161917    Objective Loss 0.161917    MSE 0.155492    LR 0.000031    Time 0.039192    
+2022-01-28 17:59:49,735 - --- validate (epoch=89)-----------
+2022-01-28 17:59:49,735 - 300 samples (64 per mini-batch)
+2022-01-28 17:59:50,137 - Test: [    5/    5]    Loss 0.163992    MSE 0.163804    
+2022-01-28 17:59:50,189 - ==> MSE: 0.16380    Loss: 0.164
+
+2022-01-28 17:59:50,202 - ==> Best [MSE: 0.16166   Sparsity:0.00   Params: 139184 on epoch: 87]
+2022-01-28 17:59:50,202 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 17:59:50,213 - 
+
+2022-01-28 17:59:50,213 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:59:51,906 - Epoch: [90][   43/   43]    Overall Loss 0.161576    Objective Loss 0.161576    MSE 0.164467    LR 0.000031    Time 0.039334    
+2022-01-28 17:59:51,977 - --- validate (epoch=90)-----------
+2022-01-28 17:59:51,977 - 300 samples (64 per mini-batch)
+2022-01-28 17:59:52,385 - Test: [    5/    5]    Loss 0.163190    MSE 0.163106    
+2022-01-28 17:59:52,437 - ==> MSE: 0.16311    Loss: 0.163
+
+2022-01-28 17:59:52,451 - ==> Best [MSE: 0.16166   Sparsity:0.00   Params: 139184 on epoch: 87]
+2022-01-28 17:59:52,451 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 17:59:52,461 - 
+
+2022-01-28 17:59:52,461 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:59:54,112 - Epoch: [91][   43/   43]    Overall Loss 0.161612    Objective Loss 0.161612    MSE 0.155396    LR 0.000031    Time 0.038357    
+2022-01-28 17:59:54,174 - --- validate (epoch=91)-----------
+2022-01-28 17:59:54,174 - 300 samples (64 per mini-batch)
+2022-01-28 17:59:54,579 - Test: [    5/    5]    Loss 0.160715    MSE 0.160872    
+2022-01-28 17:59:54,636 - ==> MSE: 0.16087    Loss: 0.161
+
+2022-01-28 17:59:54,649 - ==> Best [MSE: 0.16087   Sparsity:0.00   Params: 139184 on epoch: 91]
+2022-01-28 17:59:54,649 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 17:59:54,662 - 
+
+2022-01-28 17:59:54,662 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:59:56,317 - Epoch: [92][   43/   43]    Overall Loss 0.160595    Objective Loss 0.160595    MSE 0.163381    LR 0.000031    Time 0.038452    
+2022-01-28 17:59:56,371 - --- validate (epoch=92)-----------
+2022-01-28 17:59:56,371 - 300 samples (64 per mini-batch)
+2022-01-28 17:59:56,774 - Test: [    5/    5]    Loss 0.162833    MSE 0.162423    
+2022-01-28 17:59:56,828 - ==> MSE: 0.16242    Loss: 0.163
+
+2022-01-28 17:59:56,842 - ==> Best [MSE: 0.16087   Sparsity:0.00   Params: 139184 on epoch: 91]
+2022-01-28 17:59:56,842 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 17:59:56,852 - 
+
+2022-01-28 17:59:56,852 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 17:59:58,510 - Epoch: [93][   43/   43]    Overall Loss 0.160989    Objective Loss 0.160989    MSE 0.164572    LR 0.000031    Time 0.038516    
+2022-01-28 17:59:58,573 - --- validate (epoch=93)-----------
+2022-01-28 17:59:58,573 - 300 samples (64 per mini-batch)
+2022-01-28 17:59:58,976 - Test: [    5/    5]    Loss 0.161044    MSE 0.161157    
+2022-01-28 17:59:59,031 - ==> MSE: 0.16116    Loss: 0.161
+
+2022-01-28 17:59:59,044 - ==> Best [MSE: 0.16087   Sparsity:0.00   Params: 139184 on epoch: 91]
+2022-01-28 17:59:59,044 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 17:59:59,055 - 
+
+2022-01-28 17:59:59,055 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 18:00:00,876 - Epoch: [94][   43/   43]    Overall Loss 0.161425    Objective Loss 0.161425    MSE 0.159261    LR 0.000031    Time 0.042315    
+2022-01-28 18:00:00,939 - --- validate (epoch=94)-----------
+2022-01-28 18:00:00,939 - 300 samples (64 per mini-batch)
+2022-01-28 18:00:01,374 - Test: [    5/    5]    Loss 0.161659    MSE 0.161589    
+2022-01-28 18:00:01,430 - ==> MSE: 0.16159    Loss: 0.162
+
+2022-01-28 18:00:01,444 - ==> Best [MSE: 0.16087   Sparsity:0.00   Params: 139184 on epoch: 91]
+2022-01-28 18:00:01,444 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 18:00:01,456 - 
+
+2022-01-28 18:00:01,456 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 18:00:03,162 - Epoch: [95][   43/   43]    Overall Loss 0.161477    Objective Loss 0.161477    MSE 0.157092    LR 0.000031    Time 0.039656    
+2022-01-28 18:00:03,223 - --- validate (epoch=95)-----------
+2022-01-28 18:00:03,224 - 300 samples (64 per mini-batch)
+2022-01-28 18:00:03,634 - Test: [    5/    5]    Loss 0.163716    MSE 0.163509    
+2022-01-28 18:00:03,690 - ==> MSE: 0.16351    Loss: 0.164
+
+2022-01-28 18:00:03,710 - ==> Best [MSE: 0.16087   Sparsity:0.00   Params: 139184 on epoch: 91]
+2022-01-28 18:00:03,710 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 18:00:03,720 - 
+
+2022-01-28 18:00:03,720 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 18:00:05,478 - Epoch: [96][   43/   43]    Overall Loss 0.160312    Objective Loss 0.160312    MSE 0.159583    LR 0.000031    Time 0.040851    
+2022-01-28 18:00:05,538 - --- validate (epoch=96)-----------
+2022-01-28 18:00:05,538 - 300 samples (64 per mini-batch)
+2022-01-28 18:00:05,948 - Test: [    5/    5]    Loss 0.161983    MSE 0.162354    
+2022-01-28 18:00:06,003 - ==> MSE: 0.16235    Loss: 0.162
+
+2022-01-28 18:00:06,017 - ==> Best [MSE: 0.16087   Sparsity:0.00   Params: 139184 on epoch: 91]
+2022-01-28 18:00:06,017 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 18:00:06,028 - 
+
+2022-01-28 18:00:06,028 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 18:00:07,715 - Epoch: [97][   43/   43]    Overall Loss 0.160461    Objective Loss 0.160461    MSE 0.159470    LR 0.000031    Time 0.039191    
+2022-01-28 18:00:07,770 - --- validate (epoch=97)-----------
+2022-01-28 18:00:07,771 - 300 samples (64 per mini-batch)
+2022-01-28 18:00:08,176 - Test: [    5/    5]    Loss 0.162066    MSE 0.161934    
+2022-01-28 18:00:08,229 - ==> MSE: 0.16193    Loss: 0.162
+
+2022-01-28 18:00:08,247 - ==> Best [MSE: 0.16087   Sparsity:0.00   Params: 139184 on epoch: 91]
+2022-01-28 18:00:08,248 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 18:00:08,258 - 
+
+2022-01-28 18:00:08,258 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 18:00:09,943 - Epoch: [98][   43/   43]    Overall Loss 0.160199    Objective Loss 0.160199    MSE 0.156677    LR 0.000031    Time 0.039147    
+2022-01-28 18:00:10,002 - --- validate (epoch=98)-----------
+2022-01-28 18:00:10,002 - 300 samples (64 per mini-batch)
+2022-01-28 18:00:10,394 - Test: [    5/    5]    Loss 0.161258    MSE 0.161376    
+2022-01-28 18:00:10,448 - ==> MSE: 0.16138    Loss: 0.161
+
+2022-01-28 18:00:10,462 - ==> Best [MSE: 0.16087   Sparsity:0.00   Params: 139184 on epoch: 91]
+2022-01-28 18:00:10,463 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 18:00:10,473 - 
+
+2022-01-28 18:00:10,473 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 18:00:12,114 - Epoch: [99][   43/   43]    Overall Loss 0.160792    Objective Loss 0.160792    MSE 0.156300    LR 0.000031    Time 0.038123    
+2022-01-28 18:00:12,165 - --- validate (epoch=99)-----------
+2022-01-28 18:00:12,165 - 300 samples (64 per mini-batch)
+2022-01-28 18:00:12,568 - Test: [    5/    5]    Loss 0.160201    MSE 0.160613    
+2022-01-28 18:00:12,624 - ==> MSE: 0.16061    Loss: 0.160
+
+2022-01-28 18:00:12,643 - ==> Best [MSE: 0.16061   Sparsity:0.00   Params: 139184 on epoch: 99]
+2022-01-28 18:00:12,643 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 18:00:12,655 - 
+
+2022-01-28 18:00:12,655 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 18:00:14,360 - Epoch: [100][   43/   43]    Overall Loss 0.160058    Objective Loss 0.160058    MSE 0.156431    LR 0.000031    Time 0.039614    
+2022-01-28 18:00:14,413 - --- validate (epoch=100)-----------
+2022-01-28 18:00:14,414 - 300 samples (64 per mini-batch)
+2022-01-28 18:00:14,815 - Test: [    5/    5]    Loss 0.160554    MSE 0.160870    
+2022-01-28 18:00:14,872 - ==> MSE: 0.16087    Loss: 0.161
+
+2022-01-28 18:00:14,889 - ==> Best [MSE: 0.16061   Sparsity:0.00   Params: 139184 on epoch: 99]
+2022-01-28 18:00:14,889 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 18:00:14,900 - 
+
+2022-01-28 18:00:14,900 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 18:00:16,577 - Epoch: [101][   43/   43]    Overall Loss 0.159670    Objective Loss 0.159670    MSE 0.156387    LR 0.000031    Time 0.038963    
+2022-01-28 18:00:16,634 - --- validate (epoch=101)-----------
+2022-01-28 18:00:16,634 - 300 samples (64 per mini-batch)
+2022-01-28 18:00:17,040 - Test: [    5/    5]    Loss 0.160184    MSE 0.160429    
+2022-01-28 18:00:17,095 - ==> MSE: 0.16043    Loss: 0.160
+
+2022-01-28 18:00:17,110 - ==> Best [MSE: 0.16043   Sparsity:0.00   Params: 139184 on epoch: 101]
+2022-01-28 18:00:17,110 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 18:00:17,122 - 
+
+2022-01-28 18:00:17,123 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 18:00:18,789 - Epoch: [102][   43/   43]    Overall Loss 0.159978    Objective Loss 0.159978    MSE 0.159861    LR 0.000031    Time 0.038728    
+2022-01-28 18:00:18,851 - --- validate (epoch=102)-----------
+2022-01-28 18:00:18,851 - 300 samples (64 per mini-batch)
+2022-01-28 18:00:19,258 - Test: [    5/    5]    Loss 0.161184    MSE 0.161408    
+2022-01-28 18:00:19,315 - ==> MSE: 0.16141    Loss: 0.161
+
+2022-01-28 18:00:19,331 - ==> Best [MSE: 0.16043   Sparsity:0.00   Params: 139184 on epoch: 101]
+2022-01-28 18:00:19,331 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 18:00:19,342 - 
+
+2022-01-28 18:00:19,342 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 18:00:21,165 - Epoch: [103][   43/   43]    Overall Loss 0.159951    Objective Loss 0.159951    MSE 0.157873    LR 0.000031    Time 0.042380    
+2022-01-28 18:00:21,221 - --- validate (epoch=103)-----------
+2022-01-28 18:00:21,221 - 300 samples (64 per mini-batch)
+2022-01-28 18:00:21,627 - Test: [    5/    5]    Loss 0.163509    MSE 0.163357    
+2022-01-28 18:00:21,685 - ==> MSE: 0.16336    Loss: 0.164
+
+2022-01-28 18:00:21,704 - ==> Best [MSE: 0.16043   Sparsity:0.00   Params: 139184 on epoch: 101]
+2022-01-28 18:00:21,705 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 18:00:21,715 - 
+
+2022-01-28 18:00:21,715 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 18:00:23,544 - Epoch: [104][   43/   43]    Overall Loss 0.160298    Objective Loss 0.160298    MSE 0.155537    LR 0.000031    Time 0.042503    
+2022-01-28 18:00:23,599 - --- validate (epoch=104)-----------
+2022-01-28 18:00:23,599 - 300 samples (64 per mini-batch)
+2022-01-28 18:00:24,004 - Test: [    5/    5]    Loss 0.160782    MSE 0.160819    
+2022-01-28 18:00:24,057 - ==> MSE: 0.16082    Loss: 0.161
+
+2022-01-28 18:00:24,076 - ==> Best [MSE: 0.16043   Sparsity:0.00   Params: 139184 on epoch: 101]
+2022-01-28 18:00:24,077 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 18:00:24,087 - 
+
+2022-01-28 18:00:24,087 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 18:00:25,738 - Epoch: [105][   43/   43]    Overall Loss 0.159969    Objective Loss 0.159969    MSE 0.153978    LR 0.000031    Time 0.038360    
+2022-01-28 18:00:25,802 - --- validate (epoch=105)-----------
+2022-01-28 18:00:25,803 - 300 samples (64 per mini-batch)
+2022-01-28 18:00:26,201 - Test: [    5/    5]    Loss 0.160215    MSE 0.160168    
+2022-01-28 18:00:26,257 - ==> MSE: 0.16017    Loss: 0.160
+
+2022-01-28 18:00:26,273 - ==> Best [MSE: 0.16017   Sparsity:0.00   Params: 139184 on epoch: 105]
+2022-01-28 18:00:26,273 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 18:00:26,285 - 
+
+2022-01-28 18:00:26,285 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 18:00:28,002 - Epoch: [106][   43/   43]    Overall Loss 0.159418    Objective Loss 0.159418    MSE 0.158192    LR 0.000031    Time 0.039894    
+2022-01-28 18:00:28,056 - --- validate (epoch=106)-----------
+2022-01-28 18:00:28,056 - 300 samples (64 per mini-batch)
+2022-01-28 18:00:28,457 - Test: [    5/    5]    Loss 0.160847    MSE 0.160955    
+2022-01-28 18:00:28,513 - ==> MSE: 0.16095    Loss: 0.161
+
+2022-01-28 18:00:28,531 - ==> Best [MSE: 0.16017   Sparsity:0.00   Params: 139184 on epoch: 105]
+2022-01-28 18:00:28,531 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 18:00:28,541 - 
+
+2022-01-28 18:00:28,541 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 18:00:30,193 - Epoch: [107][   43/   43]    Overall Loss 0.159512    Objective Loss 0.159512    MSE 0.155963    LR 0.000031    Time 0.038377    
+2022-01-28 18:00:30,248 - --- validate (epoch=107)-----------
+2022-01-28 18:00:30,249 - 300 samples (64 per mini-batch)
+2022-01-28 18:00:30,675 - Test: [    5/    5]    Loss 0.161814    MSE 0.161903    
+2022-01-28 18:00:30,731 - ==> MSE: 0.16190    Loss: 0.162
+
+2022-01-28 18:00:30,747 - ==> Best [MSE: 0.16017   Sparsity:0.00   Params: 139184 on epoch: 105]
+2022-01-28 18:00:30,748 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 18:00:30,758 - 
+
+2022-01-28 18:00:30,758 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 18:00:32,441 - Epoch: [108][   43/   43]    Overall Loss 0.160293    Objective Loss 0.160293    MSE 0.164950    LR 0.000031    Time 0.039108    
+2022-01-28 18:00:32,506 - --- validate (epoch=108)-----------
+2022-01-28 18:00:32,507 - 300 samples (64 per mini-batch)
+2022-01-28 18:00:32,913 - Test: [    5/    5]    Loss 0.160123    MSE 0.160064    
+2022-01-28 18:00:32,969 - ==> MSE: 0.16006    Loss: 0.160
+
+2022-01-28 18:00:32,985 - ==> Best [MSE: 0.16006   Sparsity:0.00   Params: 139184 on epoch: 108]
+2022-01-28 18:00:32,985 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 18:00:32,998 - 
+
+2022-01-28 18:00:32,998 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 18:00:34,646 - Epoch: [109][   43/   43]    Overall Loss 0.159749    Objective Loss 0.159749    MSE 0.155988    LR 0.000031    Time 0.038298    
+2022-01-28 18:00:34,708 - --- validate (epoch=109)-----------
+2022-01-28 18:00:34,708 - 300 samples (64 per mini-batch)
+2022-01-28 18:00:35,120 - Test: [    5/    5]    Loss 0.160979    MSE 0.161118    
+2022-01-28 18:00:35,177 - ==> MSE: 0.16112    Loss: 0.161
+
+2022-01-28 18:00:35,194 - ==> Best [MSE: 0.16006   Sparsity:0.00   Params: 139184 on epoch: 108]
+2022-01-28 18:00:35,194 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 18:00:35,205 - 
+
+2022-01-28 18:00:35,205 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 18:00:36,841 - Epoch: [110][   43/   43]    Overall Loss 0.159267    Objective Loss 0.159267    MSE 0.166449    LR 0.000031    Time 0.038027    
+2022-01-28 18:00:36,895 - --- validate (epoch=110)-----------
+2022-01-28 18:00:36,895 - 300 samples (64 per mini-batch)
+2022-01-28 18:00:37,296 - Test: [    5/    5]    Loss 0.159284    MSE 0.159493    
+2022-01-28 18:00:37,353 - ==> MSE: 0.15949    Loss: 0.159
+
+2022-01-28 18:00:37,370 - ==> Best [MSE: 0.15949   Sparsity:0.00   Params: 139184 on epoch: 110]
+2022-01-28 18:00:37,370 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 18:00:37,382 - 
+
+2022-01-28 18:00:37,382 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 18:00:39,055 - Epoch: [111][   43/   43]    Overall Loss 0.159640    Objective Loss 0.159640    MSE 0.156939    LR 0.000031    Time 0.038859    
+2022-01-28 18:00:39,110 - --- validate (epoch=111)-----------
+2022-01-28 18:00:39,110 - 300 samples (64 per mini-batch)
+2022-01-28 18:00:39,511 - Test: [    5/    5]    Loss 0.160767    MSE 0.161020    
+2022-01-28 18:00:39,563 - ==> MSE: 0.16102    Loss: 0.161
+
+2022-01-28 18:00:39,580 - ==> Best [MSE: 0.15949   Sparsity:0.00   Params: 139184 on epoch: 110]
+2022-01-28 18:00:39,580 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 18:00:39,590 - 
+
+2022-01-28 18:00:39,591 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 18:00:41,257 - Epoch: [112][   43/   43]    Overall Loss 0.159109    Objective Loss 0.159109    MSE 0.158362    LR 0.000031    Time 0.038731    
+2022-01-28 18:00:41,317 - --- validate (epoch=112)-----------
+2022-01-28 18:00:41,317 - 300 samples (64 per mini-batch)
+2022-01-28 18:00:41,717 - Test: [    5/    5]    Loss 0.159145    MSE 0.158981    
+2022-01-28 18:00:41,774 - ==> MSE: 0.15898    Loss: 0.159
+
+2022-01-28 18:00:41,797 - ==> Best [MSE: 0.15898   Sparsity:0.00   Params: 139184 on epoch: 112]
+2022-01-28 18:00:41,797 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 18:00:41,810 - 
+
+2022-01-28 18:00:41,810 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 18:00:43,473 - Epoch: [113][   43/   43]    Overall Loss 0.158847    Objective Loss 0.158847    MSE 0.146386    LR 0.000031    Time 0.038652    
+2022-01-28 18:00:43,528 - --- validate (epoch=113)-----------
+2022-01-28 18:00:43,528 - 300 samples (64 per mini-batch)
+2022-01-28 18:00:43,927 - Test: [    5/    5]    Loss 0.160384    MSE 0.160258    
+2022-01-28 18:00:43,983 - ==> MSE: 0.16026    Loss: 0.160
+
+2022-01-28 18:00:44,000 - ==> Best [MSE: 0.15898   Sparsity:0.00   Params: 139184 on epoch: 112]
+2022-01-28 18:00:44,001 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 18:00:44,011 - 
+
+2022-01-28 18:00:44,011 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 18:00:45,721 - Epoch: [114][   43/   43]    Overall Loss 0.159258    Objective Loss 0.159258    MSE 0.157207    LR 0.000031    Time 0.039744    
+2022-01-28 18:00:45,775 - --- validate (epoch=114)-----------
+2022-01-28 18:00:45,775 - 300 samples (64 per mini-batch)
+2022-01-28 18:00:46,180 - Test: [    5/    5]    Loss 0.160698    MSE 0.160708    
+2022-01-28 18:00:46,232 - ==> MSE: 0.16071    Loss: 0.161
+
+2022-01-28 18:00:46,250 - ==> Best [MSE: 0.15898   Sparsity:0.00   Params: 139184 on epoch: 112]
+2022-01-28 18:00:46,250 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 18:00:46,260 - 
+
+2022-01-28 18:00:46,261 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 18:00:47,910 - Epoch: [115][   43/   43]    Overall Loss 0.159219    Objective Loss 0.159219    MSE 0.159624    LR 0.000031    Time 0.038323    
+2022-01-28 18:00:47,965 - --- validate (epoch=115)-----------
+2022-01-28 18:00:47,966 - 300 samples (64 per mini-batch)
+2022-01-28 18:00:48,378 - Test: [    5/    5]    Loss 0.160351    MSE 0.160527    
+2022-01-28 18:00:48,435 - ==> MSE: 0.16053    Loss: 0.160
+
+2022-01-28 18:00:48,457 - ==> Best [MSE: 0.15898   Sparsity:0.00   Params: 139184 on epoch: 112]
+2022-01-28 18:00:48,457 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 18:00:48,467 - 
+
+2022-01-28 18:00:48,468 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 18:00:50,133 - Epoch: [116][   43/   43]    Overall Loss 0.158736    Objective Loss 0.158736    MSE 0.150660    LR 0.000031    Time 0.038693    
+2022-01-28 18:00:50,189 - --- validate (epoch=116)-----------
+2022-01-28 18:00:50,189 - 300 samples (64 per mini-batch)
+2022-01-28 18:00:50,593 - Test: [    5/    5]    Loss 0.160115    MSE 0.160108    
+2022-01-28 18:00:50,647 - ==> MSE: 0.16011    Loss: 0.160
+
+2022-01-28 18:00:50,667 - ==> Best [MSE: 0.15898   Sparsity:0.00   Params: 139184 on epoch: 112]
+2022-01-28 18:00:50,668 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 18:00:50,678 - 
+
+2022-01-28 18:00:50,678 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 18:00:52,363 - Epoch: [117][   43/   43]    Overall Loss 0.159355    Objective Loss 0.159355    MSE 0.162814    LR 0.000031    Time 0.039162    
+2022-01-28 18:00:52,435 - --- validate (epoch=117)-----------
+2022-01-28 18:00:52,435 - 300 samples (64 per mini-batch)
+2022-01-28 18:00:52,846 - Test: [    5/    5]    Loss 0.161397    MSE 0.161623    
+2022-01-28 18:00:52,902 - ==> MSE: 0.16162    Loss: 0.161
+
+2022-01-28 18:00:52,920 - ==> Best [MSE: 0.15898   Sparsity:0.00   Params: 139184 on epoch: 112]
+2022-01-28 18:00:52,920 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 18:00:52,931 - 
+
+2022-01-28 18:00:52,931 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 18:00:54,597 - Epoch: [118][   43/   43]    Overall Loss 0.159530    Objective Loss 0.159530    MSE 0.154303    LR 0.000031    Time 0.038709    
+2022-01-28 18:00:54,653 - --- validate (epoch=118)-----------
+2022-01-28 18:00:54,653 - 300 samples (64 per mini-batch)
+2022-01-28 18:00:55,052 - Test: [    5/    5]    Loss 0.159929    MSE 0.159947    
+2022-01-28 18:00:55,108 - ==> MSE: 0.15995    Loss: 0.160
+
+2022-01-28 18:00:55,129 - ==> Best [MSE: 0.15898   Sparsity:0.00   Params: 139184 on epoch: 112]
+2022-01-28 18:00:55,130 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 18:00:55,140 - 
+
+2022-01-28 18:00:55,140 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 18:00:56,836 - Epoch: [119][   43/   43]    Overall Loss 0.158238    Objective Loss 0.158238    MSE 0.148304    LR 0.000031    Time 0.039398    
+2022-01-28 18:00:56,890 - --- validate (epoch=119)-----------
+2022-01-28 18:00:56,890 - 300 samples (64 per mini-batch)
+2022-01-28 18:00:57,293 - Test: [    5/    5]    Loss 0.160199    MSE 0.159943    
+2022-01-28 18:00:57,354 - ==> MSE: 0.15994    Loss: 0.160
+
+2022-01-28 18:00:57,374 - ==> Best [MSE: 0.15898   Sparsity:0.00   Params: 139184 on epoch: 112]
+2022-01-28 18:00:57,375 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 18:00:57,385 - 
+
+2022-01-28 18:00:57,385 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 18:00:59,201 - Epoch: [120][   43/   43]    Overall Loss 0.158761    Objective Loss 0.158761    MSE 0.163772    LR 0.000031    Time 0.042200    
+2022-01-28 18:00:59,264 - --- validate (epoch=120)-----------
+2022-01-28 18:00:59,264 - 300 samples (64 per mini-batch)
+2022-01-28 18:00:59,693 - Test: [    5/    5]    Loss 0.157957    MSE 0.157626    
+2022-01-28 18:00:59,750 - ==> MSE: 0.15763    Loss: 0.158
+
+2022-01-28 18:00:59,772 - ==> Best [MSE: 0.15763   Sparsity:0.00   Params: 139184 on epoch: 120]
+2022-01-28 18:00:59,772 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 18:00:59,785 - 
+
+2022-01-28 18:00:59,785 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 18:01:01,455 - Epoch: [121][   43/   43]    Overall Loss 0.158628    Objective Loss 0.158628    MSE 0.154075    LR 0.000031    Time 0.038803    
+2022-01-28 18:01:01,510 - --- validate (epoch=121)-----------
+2022-01-28 18:01:01,511 - 300 samples (64 per mini-batch)
+2022-01-28 18:01:01,916 - Test: [    5/    5]    Loss 0.158179    MSE 0.158454    
+2022-01-28 18:01:01,970 - ==> MSE: 0.15845    Loss: 0.158
+
+2022-01-28 18:01:01,994 - ==> Best [MSE: 0.15763   Sparsity:0.00   Params: 139184 on epoch: 120]
+2022-01-28 18:01:01,994 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 18:01:02,004 - 
+
+2022-01-28 18:01:02,004 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 18:01:03,660 - Epoch: [122][   43/   43]    Overall Loss 0.158525    Objective Loss 0.158525    MSE 0.161328    LR 0.000031    Time 0.038465    
+2022-01-28 18:01:03,722 - --- validate (epoch=122)-----------
+2022-01-28 18:01:03,722 - 300 samples (64 per mini-batch)
+2022-01-28 18:01:04,127 - Test: [    5/    5]    Loss 0.159114    MSE 0.159157    
+2022-01-28 18:01:04,185 - ==> MSE: 0.15916    Loss: 0.159
+
+2022-01-28 18:01:04,208 - ==> Best [MSE: 0.15763   Sparsity:0.00   Params: 139184 on epoch: 120]
+2022-01-28 18:01:04,208 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 18:01:04,218 - 
+
+2022-01-28 18:01:04,219 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 18:01:06,004 - Epoch: [123][   43/   43]    Overall Loss 0.158341    Objective Loss 0.158341    MSE 0.153275    LR 0.000031    Time 0.041478    
+2022-01-28 18:01:06,060 - --- validate (epoch=123)-----------
+2022-01-28 18:01:06,061 - 300 samples (64 per mini-batch)
+2022-01-28 18:01:06,490 - Test: [    5/    5]    Loss 0.159657    MSE 0.159944    
+2022-01-28 18:01:06,546 - ==> MSE: 0.15994    Loss: 0.160
+
+2022-01-28 18:01:06,573 - ==> Best [MSE: 0.15763   Sparsity:0.00   Params: 139184 on epoch: 120]
+2022-01-28 18:01:06,573 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 18:01:06,585 - 
+
+2022-01-28 18:01:06,585 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 18:01:08,261 - Epoch: [124][   43/   43]    Overall Loss 0.158018    Objective Loss 0.158018    MSE 0.153442    LR 0.000031    Time 0.038933    
+2022-01-28 18:01:08,317 - --- validate (epoch=124)-----------
+2022-01-28 18:01:08,317 - 300 samples (64 per mini-batch)
+2022-01-28 18:01:08,719 - Test: [    5/    5]    Loss 0.158428    MSE 0.158394    
+2022-01-28 18:01:08,775 - ==> MSE: 0.15839    Loss: 0.158
+
+2022-01-28 18:01:08,796 - ==> Best [MSE: 0.15763   Sparsity:0.00   Params: 139184 on epoch: 120]
+2022-01-28 18:01:08,796 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 18:01:08,806 - 
+
+2022-01-28 18:01:08,807 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 18:01:10,626 - Epoch: [125][   43/   43]    Overall Loss 0.158166    Objective Loss 0.158166    MSE 0.158316    LR 0.000031    Time 0.042273    
+2022-01-28 18:01:10,683 - --- validate (epoch=125)-----------
+2022-01-28 18:01:10,684 - 300 samples (64 per mini-batch)
+2022-01-28 18:01:11,113 - Test: [    5/    5]    Loss 0.158117    MSE 0.158746    
+2022-01-28 18:01:11,167 - ==> MSE: 0.15875    Loss: 0.158
+
+2022-01-28 18:01:11,195 - ==> Best [MSE: 0.15763   Sparsity:0.00   Params: 139184 on epoch: 120]
+2022-01-28 18:01:11,195 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 18:01:11,207 - 
+
+2022-01-28 18:01:11,207 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 18:01:13,001 - Epoch: [126][   43/   43]    Overall Loss 0.157904    Objective Loss 0.157904    MSE 0.153610    LR 0.000031    Time 0.041686    
+2022-01-28 18:01:13,063 - --- validate (epoch=126)-----------
+2022-01-28 18:01:13,064 - 300 samples (64 per mini-batch)
+2022-01-28 18:01:13,479 - Test: [    5/    5]    Loss 0.159847    MSE 0.159667    
+2022-01-28 18:01:13,534 - ==> MSE: 0.15967    Loss: 0.160
+
+2022-01-28 18:01:13,557 - ==> Best [MSE: 0.15763   Sparsity:0.00   Params: 139184 on epoch: 120]
+2022-01-28 18:01:13,558 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 18:01:13,568 - 
+
+2022-01-28 18:01:13,568 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 18:01:15,254 - Epoch: [127][   43/   43]    Overall Loss 0.158329    Objective Loss 0.158329    MSE 0.162289    LR 0.000031    Time 0.039169    
+2022-01-28 18:01:15,325 - --- validate (epoch=127)-----------
+2022-01-28 18:01:15,325 - 300 samples (64 per mini-batch)
+2022-01-28 18:01:15,729 - Test: [    5/    5]    Loss 0.160197    MSE 0.160318    
+2022-01-28 18:01:15,782 - ==> MSE: 0.16032    Loss: 0.160
+
+2022-01-28 18:01:15,807 - ==> Best [MSE: 0.15763   Sparsity:0.00   Params: 139184 on epoch: 120]
+2022-01-28 18:01:15,807 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 18:01:15,817 - 
+
+2022-01-28 18:01:15,818 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 18:01:17,480 - Epoch: [128][   43/   43]    Overall Loss 0.157805    Objective Loss 0.157805    MSE 0.153023    LR 0.000031    Time 0.038621    
+2022-01-28 18:01:17,542 - --- validate (epoch=128)-----------
+2022-01-28 18:01:17,542 - 300 samples (64 per mini-batch)
+2022-01-28 18:01:17,949 - Test: [    5/    5]    Loss 0.160346    MSE 0.160298    
+2022-01-28 18:01:18,003 - ==> MSE: 0.16030    Loss: 0.160
+
+2022-01-28 18:01:18,023 - ==> Best [MSE: 0.15763   Sparsity:0.00   Params: 139184 on epoch: 120]
+2022-01-28 18:01:18,024 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 18:01:18,034 - 
+
+2022-01-28 18:01:18,034 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 18:01:19,738 - Epoch: [129][   43/   43]    Overall Loss 0.158538    Objective Loss 0.158538    MSE 0.157460    LR 0.000031    Time 0.039600    
+2022-01-28 18:01:19,795 - --- validate (epoch=129)-----------
+2022-01-28 18:01:19,796 - 300 samples (64 per mini-batch)
+2022-01-28 18:01:20,191 - Test: [    5/    5]    Loss 0.159252    MSE 0.159582    
+2022-01-28 18:01:20,246 - ==> MSE: 0.15958    Loss: 0.159
+
+2022-01-28 18:01:20,267 - ==> Best [MSE: 0.15763   Sparsity:0.00   Params: 139184 on epoch: 120]
+2022-01-28 18:01:20,267 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 18:01:20,277 - 
+
+2022-01-28 18:01:20,277 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 18:01:21,917 - Epoch: [130][   43/   43]    Overall Loss 0.157214    Objective Loss 0.157214    MSE 0.154559    LR 0.000031    Time 0.038098    
+2022-01-28 18:01:21,977 - --- validate (epoch=130)-----------
+2022-01-28 18:01:21,977 - 300 samples (64 per mini-batch)
+2022-01-28 18:01:22,377 - Test: [    5/    5]    Loss 0.161116    MSE 0.160325    
+2022-01-28 18:01:22,430 - ==> MSE: 0.16033    Loss: 0.161
+
+2022-01-28 18:01:22,451 - ==> Best [MSE: 0.15763   Sparsity:0.00   Params: 139184 on epoch: 120]
+2022-01-28 18:01:22,452 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 18:01:22,462 - 
+
+2022-01-28 18:01:22,462 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 18:01:24,146 - Epoch: [131][   43/   43]    Overall Loss 0.157866    Objective Loss 0.157866    MSE 0.162788    LR 0.000031    Time 0.039124    
+2022-01-28 18:01:24,208 - --- validate (epoch=131)-----------
+2022-01-28 18:01:24,208 - 300 samples (64 per mini-batch)
+2022-01-28 18:01:24,610 - Test: [    5/    5]    Loss 0.160127    MSE 0.159898    
+2022-01-28 18:01:24,666 - ==> MSE: 0.15990    Loss: 0.160
+
+2022-01-28 18:01:24,687 - ==> Best [MSE: 0.15763   Sparsity:0.00   Params: 139184 on epoch: 120]
+2022-01-28 18:01:24,687 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 18:01:24,697 - 
+
+2022-01-28 18:01:24,697 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 18:01:26,380 - Epoch: [132][   43/   43]    Overall Loss 0.156775    Objective Loss 0.156775    MSE 0.152769    LR 0.000031    Time 0.039106    
+2022-01-28 18:01:26,435 - --- validate (epoch=132)-----------
+2022-01-28 18:01:26,436 - 300 samples (64 per mini-batch)
+2022-01-28 18:01:26,841 - Test: [    5/    5]    Loss 0.160291    MSE 0.159721    
+2022-01-28 18:01:26,898 - ==> MSE: 0.15972    Loss: 0.160
+
+2022-01-28 18:01:26,919 - ==> Best [MSE: 0.15763   Sparsity:0.00   Params: 139184 on epoch: 120]
+2022-01-28 18:01:26,919 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 18:01:26,929 - 
+
+2022-01-28 18:01:26,930 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 18:01:28,825 - Epoch: [133][   43/   43]    Overall Loss 0.157417    Objective Loss 0.157417    MSE 0.156448    LR 0.000031    Time 0.044039    
+2022-01-28 18:01:28,880 - --- validate (epoch=133)-----------
+2022-01-28 18:01:28,881 - 300 samples (64 per mini-batch)
+2022-01-28 18:01:29,287 - Test: [    5/    5]    Loss 0.159597    MSE 0.159559    
+2022-01-28 18:01:29,341 - ==> MSE: 0.15956    Loss: 0.160
+
+2022-01-28 18:01:29,368 - ==> Best [MSE: 0.15763   Sparsity:0.00   Params: 139184 on epoch: 120]
+2022-01-28 18:01:29,368 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 18:01:29,378 - 
+
+2022-01-28 18:01:29,378 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 18:01:31,042 - Epoch: [134][   43/   43]    Overall Loss 0.157679    Objective Loss 0.157679    MSE 0.154234    LR 0.000031    Time 0.038650    
+2022-01-28 18:01:31,101 - --- validate (epoch=134)-----------
+2022-01-28 18:01:31,102 - 300 samples (64 per mini-batch)
+2022-01-28 18:01:31,511 - Test: [    5/    5]    Loss 0.155562    MSE 0.155968    
+2022-01-28 18:01:31,567 - ==> MSE: 0.15597    Loss: 0.156
+
+2022-01-28 18:01:31,593 - ==> Best [MSE: 0.15597   Sparsity:0.00   Params: 139184 on epoch: 134]
+2022-01-28 18:01:31,593 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 18:01:31,606 - 
+
+2022-01-28 18:01:31,606 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 18:01:33,275 - Epoch: [135][   43/   43]    Overall Loss 0.157190    Objective Loss 0.157190    MSE 0.158321    LR 0.000031    Time 0.038794    
+2022-01-28 18:01:33,332 - --- validate (epoch=135)-----------
+2022-01-28 18:01:33,332 - 300 samples (64 per mini-batch)
+2022-01-28 18:01:33,734 - Test: [    5/    5]    Loss 0.158019    MSE 0.157841    
+2022-01-28 18:01:33,792 - ==> MSE: 0.15784    Loss: 0.158
+
+2022-01-28 18:01:33,819 - ==> Best [MSE: 0.15597   Sparsity:0.00   Params: 139184 on epoch: 134]
+2022-01-28 18:01:33,819 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 18:01:33,829 - 
+
+2022-01-28 18:01:33,829 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 18:01:35,533 - Epoch: [136][   43/   43]    Overall Loss 0.157766    Objective Loss 0.157766    MSE 0.160943    LR 0.000031    Time 0.039587    
+2022-01-28 18:01:35,586 - --- validate (epoch=136)-----------
+2022-01-28 18:01:35,586 - 300 samples (64 per mini-batch)
+2022-01-28 18:01:35,991 - Test: [    5/    5]    Loss 0.158632    MSE 0.158871    
+2022-01-28 18:01:36,046 - ==> MSE: 0.15887    Loss: 0.159
+
+2022-01-28 18:01:36,067 - ==> Best [MSE: 0.15597   Sparsity:0.00   Params: 139184 on epoch: 134]
+2022-01-28 18:01:36,067 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 18:01:36,077 - 
+
+2022-01-28 18:01:36,077 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 18:01:37,733 - Epoch: [137][   43/   43]    Overall Loss 0.157268    Objective Loss 0.157268    MSE 0.160820    LR 0.000031    Time 0.038477    
+2022-01-28 18:01:37,793 - --- validate (epoch=137)-----------
+2022-01-28 18:01:37,793 - 300 samples (64 per mini-batch)
+2022-01-28 18:01:38,199 - Test: [    5/    5]    Loss 0.159929    MSE 0.159880    
+2022-01-28 18:01:38,255 - ==> MSE: 0.15988    Loss: 0.160
+
+2022-01-28 18:01:38,269 - ==> Best [MSE: 0.15597   Sparsity:0.00   Params: 139184 on epoch: 134]
+2022-01-28 18:01:38,269 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 18:01:38,281 - 
+
+2022-01-28 18:01:38,281 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 18:01:40,004 - Epoch: [138][   43/   43]    Overall Loss 0.157593    Objective Loss 0.157593    MSE 0.155882    LR 0.000031    Time 0.040017    
+2022-01-28 18:01:40,066 - --- validate (epoch=138)-----------
+2022-01-28 18:01:40,066 - 300 samples (64 per mini-batch)
+2022-01-28 18:01:40,467 - Test: [    5/    5]    Loss 0.156717    MSE 0.157115    
+2022-01-28 18:01:40,524 - ==> MSE: 0.15712    Loss: 0.157
+
+2022-01-28 18:01:40,538 - ==> Best [MSE: 0.15597   Sparsity:0.00   Params: 139184 on epoch: 134]
+2022-01-28 18:01:40,538 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 18:01:40,548 - 
+
+2022-01-28 18:01:40,548 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 18:01:42,201 - Epoch: [139][   43/   43]    Overall Loss 0.156860    Objective Loss 0.156860    MSE 0.157600    LR 0.000031    Time 0.038403    
+2022-01-28 18:01:42,257 - --- validate (epoch=139)-----------
+2022-01-28 18:01:42,257 - 300 samples (64 per mini-batch)
+2022-01-28 18:01:42,656 - Test: [    5/    5]    Loss 0.157165    MSE 0.156869    
+2022-01-28 18:01:42,710 - ==> MSE: 0.15687    Loss: 0.157
+
+2022-01-28 18:01:42,724 - ==> Best [MSE: 0.15597   Sparsity:0.00   Params: 139184 on epoch: 134]
+2022-01-28 18:01:42,724 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 18:01:42,735 - 
+
+2022-01-28 18:01:42,735 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 18:01:44,445 - Epoch: [140][   43/   43]    Overall Loss 0.158646    Objective Loss 0.158646    MSE 0.167196    LR 0.000031    Time 0.039736    
+2022-01-28 18:01:44,502 - --- validate (epoch=140)-----------
+2022-01-28 18:01:44,502 - 300 samples (64 per mini-batch)
+2022-01-28 18:01:44,909 - Test: [    5/    5]    Loss 0.156767    MSE 0.156797    
+2022-01-28 18:01:44,962 - ==> MSE: 0.15680    Loss: 0.157
+
+2022-01-28 18:01:44,976 - ==> Best [MSE: 0.15597   Sparsity:0.00   Params: 139184 on epoch: 134]
+2022-01-28 18:01:44,977 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 18:01:44,987 - 
+
+2022-01-28 18:01:44,987 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 18:01:46,647 - Epoch: [141][   43/   43]    Overall Loss 0.156545    Objective Loss 0.156545    MSE 0.153180    LR 0.000031    Time 0.038574    
+2022-01-28 18:01:46,714 - --- validate (epoch=141)-----------
+2022-01-28 18:01:46,714 - 300 samples (64 per mini-batch)
+2022-01-28 18:01:47,124 - Test: [    5/    5]    Loss 0.156369    MSE 0.156379    
+2022-01-28 18:01:47,179 - ==> MSE: 0.15638    Loss: 0.156
+
+2022-01-28 18:01:47,193 - ==> Best [MSE: 0.15597   Sparsity:0.00   Params: 139184 on epoch: 134]
+2022-01-28 18:01:47,194 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 18:01:47,204 - 
+
+2022-01-28 18:01:47,204 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 18:01:48,871 - Epoch: [142][   43/   43]    Overall Loss 0.156513    Objective Loss 0.156513    MSE 0.151125    LR 0.000031    Time 0.038727    
+2022-01-28 18:01:48,927 - --- validate (epoch=142)-----------
+2022-01-28 18:01:48,927 - 300 samples (64 per mini-batch)
+2022-01-28 18:01:49,337 - Test: [    5/    5]    Loss 0.156594    MSE 0.156898    
+2022-01-28 18:01:49,391 - ==> MSE: 0.15690    Loss: 0.157
+
+2022-01-28 18:01:49,406 - ==> Best [MSE: 0.15597   Sparsity:0.00   Params: 139184 on epoch: 134]
+2022-01-28 18:01:49,407 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 18:01:49,417 - 
+
+2022-01-28 18:01:49,417 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 18:01:51,109 - Epoch: [143][   43/   43]    Overall Loss 0.156459    Objective Loss 0.156459    MSE 0.156254    LR 0.000031    Time 0.039316    
+2022-01-28 18:01:51,161 - --- validate (epoch=143)-----------
+2022-01-28 18:01:51,161 - 300 samples (64 per mini-batch)
+2022-01-28 18:01:51,560 - Test: [    5/    5]    Loss 0.155811    MSE 0.156017    
+2022-01-28 18:01:51,619 - ==> MSE: 0.15602    Loss: 0.156
+
+2022-01-28 18:01:51,634 - ==> Best [MSE: 0.15597   Sparsity:0.00   Params: 139184 on epoch: 134]
+2022-01-28 18:01:51,634 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 18:01:51,644 - 
+
+2022-01-28 18:01:51,644 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 18:01:53,337 - Epoch: [144][   43/   43]    Overall Loss 0.156292    Objective Loss 0.156292    MSE 0.157410    LR 0.000031    Time 0.039334    
+2022-01-28 18:01:53,396 - --- validate (epoch=144)-----------
+2022-01-28 18:01:53,396 - 300 samples (64 per mini-batch)
+2022-01-28 18:01:53,796 - Test: [    5/    5]    Loss 0.157169    MSE 0.156646    
+2022-01-28 18:01:53,854 - ==> MSE: 0.15665    Loss: 0.157
+
+2022-01-28 18:01:53,871 - ==> Best [MSE: 0.15597   Sparsity:0.00   Params: 139184 on epoch: 134]
+2022-01-28 18:01:53,871 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 18:01:53,881 - 
+
+2022-01-28 18:01:53,881 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 18:01:55,628 - Epoch: [145][   43/   43]    Overall Loss 0.156651    Objective Loss 0.156651    MSE 0.149008    LR 0.000031    Time 0.040584    
+2022-01-28 18:01:55,687 - --- validate (epoch=145)-----------
+2022-01-28 18:01:55,687 - 300 samples (64 per mini-batch)
+2022-01-28 18:01:56,121 - Test: [    5/    5]    Loss 0.156458    MSE 0.156549    
+2022-01-28 18:01:56,180 - ==> MSE: 0.15655    Loss: 0.156
+
+2022-01-28 18:01:56,200 - ==> Best [MSE: 0.15597   Sparsity:0.00   Params: 139184 on epoch: 134]
+2022-01-28 18:01:56,201 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 18:01:56,212 - 
+
+2022-01-28 18:01:56,212 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 18:01:58,042 - Epoch: [146][   43/   43]    Overall Loss 0.155544    Objective Loss 0.155544    MSE 0.154931    LR 0.000031    Time 0.042515    
+2022-01-28 18:01:58,098 - --- validate (epoch=146)-----------
+2022-01-28 18:01:58,098 - 300 samples (64 per mini-batch)
+2022-01-28 18:01:58,505 - Test: [    5/    5]    Loss 0.157300    MSE 0.157670    
+2022-01-28 18:01:58,567 - ==> MSE: 0.15767    Loss: 0.157
+
+2022-01-28 18:01:58,582 - ==> Best [MSE: 0.15597   Sparsity:0.00   Params: 139184 on epoch: 134]
+2022-01-28 18:01:58,583 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 18:01:58,593 - 
+
+2022-01-28 18:01:58,593 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 18:02:00,256 - Epoch: [147][   43/   43]    Overall Loss 0.156646    Objective Loss 0.156646    MSE 0.156046    LR 0.000031    Time 0.038639    
+2022-01-28 18:02:00,314 - --- validate (epoch=147)-----------
+2022-01-28 18:02:00,315 - 300 samples (64 per mini-batch)
+2022-01-28 18:02:00,717 - Test: [    5/    5]    Loss 0.159822    MSE 0.159717    
+2022-01-28 18:02:00,776 - ==> MSE: 0.15972    Loss: 0.160
+
+2022-01-28 18:02:00,791 - ==> Best [MSE: 0.15597   Sparsity:0.00   Params: 139184 on epoch: 134]
+2022-01-28 18:02:00,792 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 18:02:00,802 - 
+
+2022-01-28 18:02:00,802 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 18:02:02,474 - Epoch: [148][   43/   43]    Overall Loss 0.156570    Objective Loss 0.156570    MSE 0.157405    LR 0.000031    Time 0.038847    
+2022-01-28 18:02:02,529 - --- validate (epoch=148)-----------
+2022-01-28 18:02:02,530 - 300 samples (64 per mini-batch)
+2022-01-28 18:02:02,953 - Test: [    5/    5]    Loss 0.156924    MSE 0.157250    
+2022-01-28 18:02:03,005 - ==> MSE: 0.15725    Loss: 0.157
+
+2022-01-28 18:02:03,024 - ==> Best [MSE: 0.15597   Sparsity:0.00   Params: 139184 on epoch: 134]
+2022-01-28 18:02:03,025 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 18:02:03,035 - 
+
+2022-01-28 18:02:03,035 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 18:02:04,708 - Epoch: [149][   43/   43]    Overall Loss 0.156115    Objective Loss 0.156115    MSE 0.152412    LR 0.000031    Time 0.038863    
+2022-01-28 18:02:04,770 - --- validate (epoch=149)-----------
+2022-01-28 18:02:04,771 - 300 samples (64 per mini-batch)
+2022-01-28 18:02:05,170 - Test: [    5/    5]    Loss 0.158231    MSE 0.157722    
+2022-01-28 18:02:05,225 - ==> MSE: 0.15772    Loss: 0.158
+
+2022-01-28 18:02:05,240 - ==> Best [MSE: 0.15597   Sparsity:0.00   Params: 139184 on epoch: 134]
+2022-01-28 18:02:05,240 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 18:02:05,250 - 
+
+2022-01-28 18:02:05,250 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 18:02:07,048 - Epoch: [150][   43/   43]    Overall Loss 0.155987    Objective Loss 0.155987    MSE 0.150236    LR 0.000031    Time 0.041766    
+2022-01-28 18:02:07,103 - --- validate (epoch=150)-----------
+2022-01-28 18:02:07,103 - 300 samples (64 per mini-batch)
+2022-01-28 18:02:07,507 - Test: [    5/    5]    Loss 0.158056    MSE 0.158096    
+2022-01-28 18:02:07,580 - ==> MSE: 0.15810    Loss: 0.158
+
+2022-01-28 18:02:07,600 - ==> Best [MSE: 0.15597   Sparsity:0.00   Params: 139184 on epoch: 134]
+2022-01-28 18:02:07,600 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 18:02:07,610 - 
+
+2022-01-28 18:02:07,610 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 18:02:09,275 - Epoch: [151][   43/   43]    Overall Loss 0.155890    Objective Loss 0.155890    MSE 0.155098    LR 0.000031    Time 0.038683    
+2022-01-28 18:02:09,332 - --- validate (epoch=151)-----------
+2022-01-28 18:02:09,332 - 300 samples (64 per mini-batch)
+2022-01-28 18:02:09,740 - Test: [    5/    5]    Loss 0.157194    MSE 0.156559    
+2022-01-28 18:02:09,796 - ==> MSE: 0.15656    Loss: 0.157
+
+2022-01-28 18:02:09,812 - ==> Best [MSE: 0.15597   Sparsity:0.00   Params: 139184 on epoch: 134]
+2022-01-28 18:02:09,812 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 18:02:09,822 - 
+
+2022-01-28 18:02:09,822 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 18:02:11,470 - Epoch: [152][   43/   43]    Overall Loss 0.156343    Objective Loss 0.156343    MSE 0.157181    LR 0.000031    Time 0.038277    
+2022-01-28 18:02:11,526 - --- validate (epoch=152)-----------
+2022-01-28 18:02:11,526 - 300 samples (64 per mini-batch)
+2022-01-28 18:02:11,929 - Test: [    5/    5]    Loss 0.157114    MSE 0.157530    
+2022-01-28 18:02:11,988 - ==> MSE: 0.15753    Loss: 0.157
+
+2022-01-28 18:02:12,007 - ==> Best [MSE: 0.15597   Sparsity:0.00   Params: 139184 on epoch: 134]
+2022-01-28 18:02:12,007 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 18:02:12,017 - 
+
+2022-01-28 18:02:12,017 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 18:02:13,687 - Epoch: [153][   43/   43]    Overall Loss 0.155718    Objective Loss 0.155718    MSE 0.152738    LR 0.000031    Time 0.038784    
+2022-01-28 18:02:13,740 - --- validate (epoch=153)-----------
+2022-01-28 18:02:13,740 - 300 samples (64 per mini-batch)
+2022-01-28 18:02:14,163 - Test: [    5/    5]    Loss 0.158509    MSE 0.158042    
+2022-01-28 18:02:14,219 - ==> MSE: 0.15804    Loss: 0.159
+
+2022-01-28 18:02:14,240 - ==> Best [MSE: 0.15597   Sparsity:0.00   Params: 139184 on epoch: 134]
+2022-01-28 18:02:14,240 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 18:02:14,250 - 
+
+2022-01-28 18:02:14,250 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 18:02:15,871 - Epoch: [154][   43/   43]    Overall Loss 0.155598    Objective Loss 0.155598    MSE 0.152078    LR 0.000031    Time 0.037660    
+2022-01-28 18:02:15,946 - --- validate (epoch=154)-----------
+2022-01-28 18:02:15,946 - 300 samples (64 per mini-batch)
+2022-01-28 18:02:16,354 - Test: [    5/    5]    Loss 0.156254    MSE 0.156462    
+2022-01-28 18:02:16,412 - ==> MSE: 0.15646    Loss: 0.156
+
+2022-01-28 18:02:16,432 - ==> Best [MSE: 0.15597   Sparsity:0.00   Params: 139184 on epoch: 134]
+2022-01-28 18:02:16,432 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 18:02:16,445 - 
+
+2022-01-28 18:02:16,445 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 18:02:18,047 - Epoch: [155][   43/   43]    Overall Loss 0.156014    Objective Loss 0.156014    MSE 0.154400    LR 0.000031    Time 0.037218    
+2022-01-28 18:02:18,107 - --- validate (epoch=155)-----------
+2022-01-28 18:02:18,107 - 300 samples (64 per mini-batch)
+2022-01-28 18:02:18,517 - Test: [    5/    5]    Loss 0.156196    MSE 0.156246    
+2022-01-28 18:02:18,585 - ==> MSE: 0.15625    Loss: 0.156
+
+2022-01-28 18:02:18,601 - ==> Best [MSE: 0.15597   Sparsity:0.00   Params: 139184 on epoch: 134]
+2022-01-28 18:02:18,601 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 18:02:18,611 - 
+
+2022-01-28 18:02:18,612 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 18:02:20,285 - Epoch: [156][   43/   43]    Overall Loss 0.155201    Objective Loss 0.155201    MSE 0.155163    LR 0.000031    Time 0.038885    
+2022-01-28 18:02:20,347 - --- validate (epoch=156)-----------
+2022-01-28 18:02:20,347 - 300 samples (64 per mini-batch)
+2022-01-28 18:02:20,753 - Test: [    5/    5]    Loss 0.158583    MSE 0.157914    
+2022-01-28 18:02:20,811 - ==> MSE: 0.15791    Loss: 0.159
+
+2022-01-28 18:02:20,833 - ==> Best [MSE: 0.15597   Sparsity:0.00   Params: 139184 on epoch: 134]
+2022-01-28 18:02:20,833 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 18:02:20,843 - 
+
+2022-01-28 18:02:20,843 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 18:02:22,511 - Epoch: [157][   43/   43]    Overall Loss 0.155331    Objective Loss 0.155331    MSE 0.152329    LR 0.000031    Time 0.038740    
+2022-01-28 18:02:22,569 - --- validate (epoch=157)-----------
+2022-01-28 18:02:22,569 - 300 samples (64 per mini-batch)
+2022-01-28 18:02:22,975 - Test: [    5/    5]    Loss 0.155189    MSE 0.155506    
+2022-01-28 18:02:23,030 - ==> MSE: 0.15551    Loss: 0.155
+
+2022-01-28 18:02:23,050 - ==> Best [MSE: 0.15551   Sparsity:0.00   Params: 139184 on epoch: 157]
+2022-01-28 18:02:23,050 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 18:02:23,062 - 
+
+2022-01-28 18:02:23,062 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 18:02:24,737 - Epoch: [158][   43/   43]    Overall Loss 0.155431    Objective Loss 0.155431    MSE 0.156044    LR 0.000031    Time 0.038909    
+2022-01-28 18:02:24,805 - --- validate (epoch=158)-----------
+2022-01-28 18:02:24,805 - 300 samples (64 per mini-batch)
+2022-01-28 18:02:25,214 - Test: [    5/    5]    Loss 0.156944    MSE 0.157025    
+2022-01-28 18:02:25,271 - ==> MSE: 0.15702    Loss: 0.157
+
+2022-01-28 18:02:25,292 - ==> Best [MSE: 0.15551   Sparsity:0.00   Params: 139184 on epoch: 157]
+2022-01-28 18:02:25,292 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 18:02:25,302 - 
+
+2022-01-28 18:02:25,302 - Training epoch: 2700 samples (64 per mini-batch)
+2022-01-28 18:02:27,155 - Epoch: [159][   43/   43]    Overall Loss 0.155464    Objective Loss 0.155464    MSE 0.156611    LR 0.000031    Time 0.043062    
+2022-01-28 18:02:27,211 - --- validate (epoch=159)-----------
+2022-01-28 18:02:27,211 - 300 samples (64 per mini-batch)
+2022-01-28 18:02:27,630 - Test: [    5/    5]    Loss 0.155570    MSE 0.155325    
+2022-01-28 18:02:27,682 - ==> MSE: 0.15533    Loss: 0.156
+
+2022-01-28 18:02:27,699 - ==> Best [MSE: 0.15533   Sparsity:0.00   Params: 139184 on epoch: 159]
+2022-01-28 18:02:27,699 - Saving checkpoint to: logs/2022.01.28-175631/qat_checkpoint.pth.tar
+2022-01-28 18:02:27,712 - --- test ---------------------
+2022-01-28 18:02:27,713 - 500 samples (64 per mini-batch)
+2022-01-28 18:02:28,475 - Test: [    8/    8]    Loss 0.155021    MSE 0.154874    
+2022-01-28 18:02:28,531 - ==> MSE: 0.15487    Loss: 0.155
+
+2022-01-28 18:02:28,533 - 
+2022-01-28 18:02:28,534 - Log file for this run: /disks/disk2/lishengyan/mcuev/max7800-dev/ai8x-training/logs/2022.01.28-175631/2022.01.28-175631.log
